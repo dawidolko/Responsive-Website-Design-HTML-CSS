@@ -14,7 +14,7 @@ The Programming-HTML repository contains sample projects, scripts, and education
 ## **Getting Started:**
 To get started, clone the repository to your local computer:
 ```
-git clone https://github.com/yourusername/Programming-HTML.git
+git clone https://github.com/dawidolko/Programming-HTML.git
 ```
 
 Browse the available projects, scripts, and materials in their respective folders.
