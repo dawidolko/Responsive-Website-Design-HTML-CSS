@@ -1,26 +1,26 @@
-# **Kursy HTML**
+# **HTML courses**
 
-Witaj w repozytorium, które gromadzi zasoby i kursy związane z językiem programowania HTML. To miejsce stworzone zostało z myślą o osobach, które chcą poszerzyć swoją wiedzę na temat HTML lub poprawić swoje umiejętności programistyczne w tej dziedzinie.
+Welcome to the repository that collects resources and courses related to the HTML programming language. This place was created for people who want to expand their knowledge of HTML or improve their programming skills in this field.
 
-## **O repozytorium**
-Repozytorium zawiera różnorodne kursy, tutoriale oraz materiały edukacyjne dotyczące języka HTML. Znajdziesz tutaj zasoby dla początkujących, jak i dla bardziej zaawansowanych programistów, którzy chcą poszerzyć swoje umiejętności w zakresie HTML.
+## **About the repository**
+The repository contains a variety of courses, tutorials and educational materials about HTML. Here you'll find resources for beginners as well as more advanced developers who want to expand their HTML skills.
 
-Kursy zostały podzielone tematycznie, obejmując takie obszary jak:
+The courses have been divided thematically, covering areas such as:
 
-1. Podstawy HTML: Zrozumienie składni, typów danych, zmiennych, operatorów i instrukcji sterujących w języku HTML.
-2. Elementy i tagi HTML: Poznanie różnych elementów HTML i ich zastosowania.
-3. Tworzenie struktury strony internetowej: Projektowanie układu i struktury stron internetowych za pomocą HTML.
-4. Stylizacja za pomocą CSS: Wprowadzenie do CSS (Cascading Style Sheets) i sposobów stylizacji elementów HTML.
-5. Praca z formularzami: Tworzenie interaktywnych formularzy do zbierania danych od użytkowników.
-6. Integracja multimediów: Dodawanie obrazów, wideo i dźwięku na stronie internetowej.
+1. HTML Basics: Understand HTML syntax, data types, variables, operators, and control statements.
+2. HTML Elements and Tags: Learn about the different HTML elements and their uses.
+3. Creating a website structure: Designing the layout and structure of websites using HTML.
+4. Styling with CSS: Introduction to CSS (Cascading Style Sheets) and how to style HTML elements.
+5. Working with forms: Creating interactive forms to collect data from users.
+6. Multimedia Integration: Adding images, video and audio to a website.
 
-## **Jak korzystać z repozytorium**
-Zachęcamy do swobodnego przeglądania dostępnych kursów i materiałów edukacyjnych. Każdy kurs zawiera opis, materiały źródłowe, przykłady kodu oraz praktyczne ćwiczenia, które pomogą Ci w nauce i zrozumieniu języka HTML.
+## **How to use the repository**
+We encourage you to freely browse the available courses and educational materials. Each course includes a description, references, code examples, and hands-on exercises to help you learn and understand HTML.
 
-## **Wkład i wsparcie**
-Zapraszamy do aktywnego uczestnictwa w rozwoju tego repozytorium poprzez dodawanie swoich kursów, tutoriali czy materiałów, dzielenie się pomysłami oraz udzielanie opinii i sugestii. Naszym celem jest stworzenie bogatej bazy wiedzy i zasobów dla wszystkich zainteresowanych HTML.
+## **Contribution and support**
+We invite you to actively participate in the development of this repository by adding your courses, tutorials or materials, sharing your ideas and providing opinions and suggestions. Our goal is to create a rich base of knowledge and resources for anyone interested in HTML.
 
-## **Dołącz do społeczności**
-Skorzystaj z okazji, aby dołączyć do społeczności programistów HTML, gdzie wspólnie poszerzamy nasze umiejętności i rozwijamy się w tym popularnym języku programowania.
+## **Join the community**
+Take the opportunity to join the HTML developer community, where together we expand our skills and develop in this popular programming language.
 
-Zapraszamy do zapoznania się z dostępnymi kursami i dołączenia do naszej społeczności. Razem możemy poszerzyć naszą wiedzę i zdolności w programowaniu HTML.
+We invite you to check out the available courses and join our community. Together we can expand our knowledge and skills in HTML programming.
