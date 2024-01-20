@@ -356,8 +356,6 @@ main {
   background-color: lightgrey;
   margin-left: 470px;
   margin-top: 50px;
-  top: 10;
-  left: 20;
   z-index: 2;
 }
 
@@ -365,8 +363,6 @@ main {
   box-shadow: #000000 0px 0px 20px 0px;
   margin-top: 150px;
   margin-left: 450px;
-  top: 10;
-  left: 20;
   z-index: 1;
   background-color: rgba(44, 40, 40, 0.7)
 }
@@ -536,8 +532,6 @@ div h2 {
     background-color: lightgrey;
     margin-left: 270px;
     margin-top: 50px;
-    top: 10;
-    left: 20;
     z-index: 2;
   }
   
@@ -545,8 +539,6 @@ div h2 {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 250px;
-    top: 10;
-    left: 20;
     z-index: 1;
     background-color: rgba(44, 40, 40, 0.7)
   }
@@ -613,8 +605,6 @@ div h2 {
     background-color: lightgrey;
     margin-left: 80px;
     margin-top: 50px;
-    top: 10;
-    left: 20;
     z-index: 2;
   }
   
@@ -622,8 +612,6 @@ div h2 {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 80px;
-    top: 10;
-    left: 0px;
     z-index: 1;
     background-color: rgba(44, 40, 40, 0.7)
   }
@@ -750,7 +738,6 @@ div h2 {
 
   .navbar {
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -905,8 +892,6 @@ div h2 {
     background-color: lightgrey;
     margin-left: 70px;
     margin-top: 50px;
-    top: 10;
-    left: 20;
     z-index: 2;
   }
   
@@ -914,8 +899,6 @@ div h2 {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 0px;
-    top: 10;
-    left: 20;
     z-index: 1;
     background-color: rgba(44, 40, 40, 0.7)
   }
