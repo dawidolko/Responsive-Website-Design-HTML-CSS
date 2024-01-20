@@ -87,11 +87,11 @@ Zestaw reguł dla responsywności strony, w tym zmiany w stylach dla różnych s
     --ten-color: #203a4d;
 }
 
-@property --rotate {
+/* @property --rotate {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-}
+} */
 
 @keyframes fadeOut {
 

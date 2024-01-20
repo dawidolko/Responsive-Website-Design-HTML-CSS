@@ -346,14 +346,12 @@ main {
     background-color: lightgrey;
     margin-left: 670px;
     margin-top: 150px;
-    left: 20;
     z-index: 2;
 }
 
 #relativ {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-left: 500px;
-    left: 20;
     z-index: 1;
     background-color: rgba(44, 40, 40, 0.7)
 }
@@ -1065,8 +1063,6 @@ footer img:hover {
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 100px;
-        top: 10;
-        left: 20;
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
