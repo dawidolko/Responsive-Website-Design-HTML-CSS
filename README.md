@@ -484,7 +484,7 @@ Historia commit'ów:
 
 <br>![projekt](img/description/photo50.png)
  
-![Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main)
+ [Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main) - Spis commit'ów
 
 <hr>
 
