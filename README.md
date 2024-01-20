@@ -218,45 +218,62 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 
 - Krótki opis opisujący naszą firmę i zapraszający do przejrzenia produktów.
 
+ <br>![projekt](img/description/photo15.png)
+ 
 ### Galeria strony:
 
 - Mała i przejrzysta galeria, po której jeśli najedziemy na zdjęcie to ma ono swoją animację.
 
+ <br>![projekt](img/description/photo16.png)
+ 
 ## 4.3. Podstrona „Services”
 
 ### Jedna duża sekcja (ofert produktów):
 
 - Przedstawione są przykładowe produkty z ich opisem i nazwą oraz przyciskiem do przenoszenia na podstronę produktów.
 
+ <br>![projekt](img/description/photo17.png)
+ 
 ## 4.4. Podstrona „Products”
 
 ### Duża sekcja produktów z podziałem na produkty (KIDS/MEN/WOMEN):
 
 - Przyciski pozwalają na przełączenie między danymi strefami produktów. Możliwe jest wyświetlenie produktów tylko dla jednego grona osób, jak i dla wszystkich.
 
+ <br>![projekt](img/description/photo18.png)
+ 
 ## 4.5. Podstrona „Gallery”
 
 ### Relacyjne ułożenie elementów:
 
 - Sekcja składająca się z trzech kółek, gdzie to o najwyższym z-index’ie ma swój mały formularz przenoszący do podstrony produktów.
 
+ <br>![projekt](img/description/photo19.png)
+ 
 ### Galeria (zdjęcia):
 
 - Sekcja zdjęć ułożonych według rozdzielności, sekcja ta jest zrobiona na grid’zie, więc automatycznie niezależnie od urządzenia zdjęcia się układają.
 
+ <br>![projekt](img/description/photo20.png)
+ 
 ## 4.6. Podstrona „Contact”
 
 ### Sekcja formularza kontaktowego:
 
 - Ta podstrona zawiera tylko jedną sekcję, mianowicie formularz kontaktowego, gdzie jest uzupełniony ten formularz o walidację. 
+
 - Po poprawnym wprowadzeniu danych wyświetla się nam popup/alert i wiadomość zostaje wysłana.
 
+ <br>![projekt](img/description/photo21.png)
+ 
 ## 4.7. Podstrona „Faq”
 
 ### Sekcja najczęstszych pytań (pytania i odpowiedzi):
 
 - Sekcja ta za pomocą details po kliknięciu na zapytanie wyświetla odpowiedź.
 
+ <br>![projekt](img/description/photo22.png)
+ 
 ## 4.8. Podstrona „Cart”
 
 ### Sekcja pierwsza (produkty w koszyku):
@@ -264,28 +281,40 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Ta sekcja przedstawia produkty dodane do koszyka z nazwą ilością oraz ceną całkowitą.
 - Istnieje możliwość powrotu do podstrony produktów.
 
+ <br>![projekt](img/description/photo23.png)
+
 ### Sekcja druga (formularz płatniczy):
 
 - Formularz ten zwraca komunikaty jeśli podamy złe dane. Po podaniu dobrych wyświetla się komunikat o udanych zakupach i przejrzeniu maila w sprawie dalszej wysyłki.
 
+ <br>![projekt](img/description/photo24.png)
+ 
 ## 4.9. Podstrony „Product First”, „Product Second”, „Product Third”
 
 ### Sekcja pierwsza (opis produktu i zdjęcia):
 
 - Ukazuje się tu krótki opis produktu w box’ach
+
 - Zdjęcia produktu po których najechaniu mają swoją animację
 
+ <br>![projekt](img/description/photo25.png)
+ 
 ### Sekcja druga (dane wymiarowe produktu czas dostawy, koszyk):
 
 - Widoczny jest przycisk umożliwiający dodanie produktu do koszyka. Po kliknięciu produkt zostaje dodany do koszyka i przenosi nas do koszyka.
+
 - Tabela przedstawia przykładowe wartości o produkcie, takie jak opis, czas dostawy, wymiary czy kolor.
 
+ <br>![projekt](img/description/photo26.png)
+ 
 ## 4.10. Podstrona „Privacy Policy”:
 
 ### Sekcja opisu polityki prywatności:
 
 - Przedstawiony jest opis polityki prywatności po którego najechaniu test ma animację.
 
+ <br>![projekt](img/description/photo27.png)
+ 
 ## Testy strony w formacie „Desktop”:
 
 Strona główna wygląda w wersji desktopowej dobrze, nie ma nigdzie zagięć, wystających krawędzi. Pasek nawigacyjny wygląda przejrzyście, jest opisany i dodatkowo działa na wyobraźnię poprzez ikony.
