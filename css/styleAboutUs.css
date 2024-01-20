@@ -346,7 +346,6 @@ main {
     background-color: lightgrey;
     margin-left: 670px;
     margin-top: 150px;
-    top: 10;
     left: 20;
     z-index: 2;
 }
@@ -354,7 +353,6 @@ main {
 #relativ {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-left: 500px;
-    top: 10;
     left: 20;
     z-index: 1;
     background-color: rgba(44, 40, 40, 0.7)
@@ -398,8 +396,6 @@ main {
 }
 
 #background3 {
-    top: 10;
-    left: 20;
     z-index: 3;
     background-color: var(--first-color);
 }
@@ -582,16 +578,12 @@ footer img:hover {
         background-color: lightgrey;
         margin-left: 340px;
         margin-top: 150px;
-        top: 10;
-        left: 20;
         z-index: 2;
     }
     
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 300px;
-        top: 10;
-        left: 20;
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
@@ -634,8 +626,6 @@ footer img:hover {
     }
     
     #background3 {
-        top: 10;
-        left: 20;
         z-index: 3;
         background-color: var(--first-color);
     }
@@ -785,16 +775,12 @@ footer img:hover {
         background-color: lightgrey;
         margin-left: 320px;
         margin-top: 110px;
-        top: 10;
-        left: 20;
         z-index: 2;
     }
     
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 200px;
-        top: 10;
-        left: 20;
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
@@ -837,8 +823,6 @@ footer img:hover {
     }
     
     #background3 {
-        top: 10;
-        left: 20;
         z-index: 3;
         background-color: var(--first-color);
     }
@@ -934,7 +918,6 @@ footer img:hover {
 
     .navbar {
         position: fixed;
-        top: 0;
         width: 100%;
         z-index: 1000;
         display: flex;
@@ -1076,8 +1059,6 @@ footer img:hover {
         background-color: lightgrey;
         margin-left: 170px;
         margin-top: 70px;
-        top: 10;
-        left: 20;
         z-index: 2;
     }
     
@@ -1128,8 +1109,7 @@ footer img:hover {
     }
     
     #background3 {
-        top: 10;
-        left: 20;
+
         z-index: 3;
         background-color: var(--first-color);
     }
