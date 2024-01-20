@@ -102,11 +102,12 @@ body {
   text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
+  height: 4px;
   background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
   z-index: 1000;
 }
@@ -551,121 +552,121 @@ PAY - sekcja płatności
 - Media queries (`@media (max-width: 800px)`): Reguła media query dostosowuje stylizację do szerokości ekranu mniejszej lub równej 800px, zmieniając szerokość formularza płatności.
 
 Markup:
-    <main>
-        <section class="section contact" id="contact">
-            <h1 style="display:none;">.</h1>
-            <h2 style="text-align: center;">YOUR CART!</h2>
-            <div class="shopping-cart">
-                <div class="title">Shopping Cart</div>
-                <table class="cart-items">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Name</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>
-                                <button>-</button>
-                                <input type="number" value="0" style="width: 50px; text-align: center;" disabled>
-                                <button>+</button>
-                            </td>
-                            <td>$0.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="cart-total">
-                    <span>Total: $0.00</span>
-                </div>
-                <a class="button" href="./ourProducts.html">Continue shopping</a>
-            </div>
-            <div class="credit-card-form">
-                <h2>CREDIT CARD</h2>
-                <form id="card-form" action="#thankyou">
-                    <fieldset>
-                        <legend>Card Details</legend>
-                        <div class="infocard">
-                            <img src="img/visa.webp" alt="Visa" height="50" width="50">
-                            <img src="img/master.webp" alt="Mastercard" height="50" width="50">
-                        </div>
-                        <div class="form-group">
-                            <label for="cardNumber">CARD NUMBER</label>
-                            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="0000 0000 0000 0000" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="expiryMonth">EXPIRY DAY</label>
-                            <select id="expiryMonth" name="expiryMonth">
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                                <option value="4">04</option>
-                                <option value="5">05</option>
-                                <option value="6">06</option>
-                                <option value="7">07</option>
-                                <option value="8">08</option>
-                                <option value="9">09</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="expiryYear">EXPIRY MONTH</label>
-                            <select id="expiryYear" name="expiryYear">
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cardHolder">CARDHOLDER NAME</label>
-                            <input type="text" id="cardHolder" name="cardHolder" pattern="[A-Za-z\s]+" placeholder="JEAN O IMPUSM" required>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit">CONTINUE</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-        <div id="thankyou">
-            <div class="thankyou-content">
-                <p>Zamówiłeś produkt. Zajrzyj na email! Miłego dnia!</p>
-            </div>
-        </div>
+  <main>
+      <section class="section contact" id="contact">
+          <h1 style="display:none;">.</h1>
+          <h2 style="text-align: center;">YOUR CART!</h2>
+          <div class="shopping-cart">
+              <div class="title">Shopping Cart</div>
+              <table class="cart-items">
+                  <thead>
+                      <tr>
+                          <th>Product</th>
+                          <th>Name</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>
+                              <button>-</button>
+                              <input type="number" value="0" style="width: 50px; text-align: center;" disabled>
+                              <button>+</button>
+                          </td>
+                          <td>$0.00</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="cart-total">
+                  <span>Total: $0.00</span>
+              </div>
+              <a class="button" href="./ourProducts.html">Continue shopping</a>
+          </div>
+          <div class="credit-card-form">
+              <h2>CREDIT CARD</h2>
+              <form id="card-form" action="#thankyou">
+                  <fieldset>
+                      <legend>Card Details</legend>
+                      <div class="infocard">
+                          <img src="img/visa.webp" alt="Visa" height="50" width="50">
+                          <img src="img/master.webp" alt="Mastercard" height="50" width="50">
+                      </div>
+                      <div class="form-group">
+                          <label for="cardNumber">CARD NUMBER</label>
+                          <input type="text" id="cardNumber" name="cardNumber" pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="0000 0000 0000 0000" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="expiryMonth">EXPIRY DAY</label>
+                          <select id="expiryMonth" name="expiryMonth">
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="expiryYear">EXPIRY MONTH</label>
+                          <select id="expiryYear" name="expiryYear">
+                              <option value="01">January</option>
+                              <option value="02">February</option>
+                              <option value="03">March</option>
+                              <option value="04">April</option>
+                              <option value="05">May</option>
+                              <option value="06">June</option>
+                              <option value="07">July</option>
+                              <option value="08">August</option>
+                              <option value="09">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="cardHolder">CARDHOLDER NAME</label>
+                          <input type="text" id="cardHolder" name="cardHolder" pattern="[A-Za-z\s]+" placeholder="JEAN O IMPUSM" required>
+                      </div>
+                      <div class="form-group">
+                          <button type="submit">CONTINUE</button>
+                      </div>
+                  </fieldset>
+              </form>
+          </div>
+      </section>
+      <div id="thankyou">
+          <div class="thankyou-content">
+              <p>Zamówiłeś produkt. Zajrzyj na email! Miłego dnia!</p>
+          </div>
+      </div>
 </main>
 
 Style guide: 9.0
@@ -732,19 +733,19 @@ footer img:hover {
       border: 0px;
   }
 
-  nav{
-    padding-top: 22px;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--eighth-color);
+  nav {
+      padding-top: 22px;
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      background-color: var(--eighth-color);
   }
 
-  .navbar{
-    padding: 0;
-    align-items: normal;
-    background-color: transparent;
-    display: flex;
+  .navbar {
+      padding: 0;
+      align-items: normal;
+      background-color: transparent;
+      display: flex;
   }
 
 
@@ -801,16 +802,16 @@ footer img:hover {
   }
 
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: flex-end;
-    justify-content: flex-start;
-    text-align: center;
-}
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: flex-end;
+      justify-content: flex-start;
+      text-align: center;
+  }
 
   .logo img {
       border-radius: 50px;
@@ -842,12 +843,12 @@ footer img:hover {
   }
 
   nav {
-    margin-top: 0px;
-    padding-top: 22px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--eighth-color);
-}
+      margin-top: 0px;
+      padding-top: 22px;
+      display: flex;
+      justify-content: center;
+      background-color: var(--eighth-color);
+  }
 
   nav ul {
       width: 100%;

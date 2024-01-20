@@ -112,6 +112,7 @@ Zestaw reguł dla responsywności strony, w tym zmiany w stylach dla różnych s
     0% {
         --rotate: 0deg;
     }
+
     100% {
         --rotate: 360deg;
     }
@@ -121,10 +122,12 @@ Zestaw reguł dla responsywności strony, w tym zmiany w stylach dla różnych s
     10% {
         transform: translate(-10px, 10px);
     }
+
     40% {
         transform: translate(-15px, 15px);
         opacity: 1;
     }
+
     100% {
         transform: translate(100vw, -100vh);
         opacity: 0;
@@ -154,7 +157,8 @@ body {
     text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
     position: fixed;
     left: 0;
     width: 100vw;
@@ -162,17 +166,17 @@ body {
     background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
     z-index: 1000;
 }
-  
+
 .loading-top {
     top: 0;
     z-index: 1001;
 }
-  
+
 .loading-bottom {
     bottom: 0;
     z-index: 1000;
 }
-  
+
 .blur-background {
     position: absolute;
     top: 0;
@@ -374,7 +378,7 @@ main {
     border-radius: 5px;
 }
 
-#contact{
+#contact {
     background: white;
     height: 50%;
     position: relative;
@@ -388,11 +392,11 @@ main {
     height: 110%;
     border-radius: 8px;
     background: conic-gradient(from var(--rotate) at 50% 50%,
-        #03295e6b 6%,
-        transparent 30%,
-        transparent 70%,
-        #0009575b 90%,
-        #1d7afc3d 100%),
+            #03295e6b 6%,
+            transparent 30%,
+            transparent 70%,
+            #0009575b 90%,
+            #1d7afc3d 100%),
         #00189e52;
     position: absolute;
     z-index: -1;
@@ -707,20 +711,20 @@ footer img:hover {
         padding: 0px;
     }
 
-    .navbar{
+    .navbar {
         padding: 0;
         align-items: normal;
         background-color: transparent;
         display: flex;
-      }
+    }
 
-      nav{
+    nav {
         padding-top: 22px;
         margin-top: 20px;
         display: flex;
         align-items: flex-start;
         background-color: var(--eighth-color);
-      }
+    }
 
 
     .navbar-links {

@@ -73,8 +73,8 @@
 }
 
 /* Animations
-   Sekcja zawierająca kluczowe klatki dla animacji wykorzystywanych w projekcie.
-   Każda animacja ma określony przebieg zmian właściwości.
+ Sekcja zawierająca kluczowe klatki dla animacji wykorzystywanych w projekcie.
+ Każda animacja ma określony przebieg zmian właściwości.
 */
 
 @keyframes pulse {
@@ -174,18 +174,24 @@
 }
 
 @keyframes slideInOut {
-  0%, 100% {
+
+  0%,
+  100% {
       opacity: 0;
       transform: translateY(-100%);
   }
-  10%, 90% {
+
+  10%,
+  90% {
       opacity: 1;
       transform: translateY(0);
   }
 }
 
 @keyframes typing {
-  from {width: 0}
+  from {
+      width: 0
+  }
 }
 
 @keyframes blink {
@@ -197,37 +203,38 @@
 @keyframes neon1 {
   from {
       text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #ff1177,
-      0 0 70px #ff1177,
-      0 0 80px #ff1177,
-      0 0 100px #ff1177,
-      0 0 150px #ff1177;
+          0 0 20px #fff,
+          0 0 30px #fff,
+          0 0 40px #ff1177,
+          0 0 70px #ff1177,
+          0 0 80px #ff1177,
+          0 0 100px #ff1177,
+          0 0 150px #ff1177;
   }
+
   to {
       text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #ff1177,
-      0 0 35px #ff1177,
-      0 0 40px #ff1177,
-      0 0 50px #ff1177,
-      0 0 75px #ff1177;
+          0 0 10px #fff,
+          0 0 15px #fff,
+          0 0 20px #ff1177,
+          0 0 35px #ff1177,
+          0 0 40px #ff1177,
+          0 0 50px #ff1177,
+          0 0 75px #ff1177;
   }
 }
 
 
 /* Global settings
-   Globalne ustawienia i resetowanie stylów dla elementów.
-   Dotyczy box-model, marginesów, paddingów itp.
+ Globalne ustawienia i resetowanie stylów dla elementów.
+ Dotyczy box-model, marginesów, paddingów itp.
 */
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -245,364 +252,364 @@ Cała strona główna prezentuję się tak, jak na załączonym obrazku. Zawiera
 Rodzieliłem ją na poszczególne sekcje, aby łatwiej było zdefiniować style dla poszczególnych elementów.
 
 Markup:
-   <main>
-        <section class="photoFirst">
-            <!-- Sekcja pierwszego zestawu zdjęć -->
-            <!-- Obrazy i tekst w tej sekcji -->
-            <h2 style="display:none;">.</h2>
-            <img id="photos1" src="img/mainPage4.webp" alt="Lorem ipsum 1" loading="lazy" width="300" height="300">
-            <img id="photos2" src="img/mainPage5.webp" alt="Lorem ipsum 2" loading="lazy" width="300" height="300">
-            <img id="photos3" src="img/mainPage6.webp" alt="Lorem ipsum 3" loading="lazy" width="300" height="300">
-        </section>
-        <input type="checkbox" id="toggleImages">
-        <label for="toggleImages" id="showMoreButton" class="buttonFoto">LOAD MORE PHOTO</label>
-        <div class="photoSecond">
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg" alt="oksy1" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot1" width="140" height="140">
-            </div>
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg" alt="oksy2" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot2" width="140" height="140">
-            </div>
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg" alt="oksy3" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot3" width="140" height="140">
-            </div>
-        </div>
-        <section class="photoSecond">
-            <h2 style="display:none;">.</h2>
-            <img class="photosX" src="img/mainPage1.webp" alt="Lorem ipsum 4" loading="lazy" width="300" height="300">
-            <img class="photosX" src="img/mainPage2.webp" alt="Lorem ipsum 5" loading="lazy" width="300" height="300">
-            <img class="photosX" src="img/mainPage3.webp" alt="Lorem ipsum 6" loading="lazy" width="300" height="300">
-        </section>
-        <label for="toggleImages" id="showLessButton" class="buttonFoto">LOAD LESS PHOTO</label>
-        <div class="product-grid">
-            <div class="product-item" style="background-color: #eae9e7;">
-                <div class="product-image">
-                    <img src="img/gallery1.webp" alt="Gallery 1" loading="lazy" width="300" height="300">
-                </div>
-                <div class="product-content">
-                    <h3>LOREM IPSUM</h3>
-                    <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
-                </div>
-            </div>
-            <div id="drugie" class="product-item" style="background-color: #eae9e7">
-                <div class="product-image">
-                    <img src="img/gallery2.webp" alt="Gallery 2" loading="lazy" width="300" height="300">
-                </div>
-                <div class="product-content">
-                    <h3>LOREM IPSUM</h3>
-                    <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
-                </div>
-            </div>
-        </div>
-        <section class="section">
-            <h2 class="section__heading">Lorem ipsum</h2>
-            <div class="about-us__textbox">
-                <p class="about-us__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a
-                    est. Integer pulvinar dui elit, vitae vehicula est tempor venenatis.
-                    Proin pulvinar pulvinar enim, et vestibulum leo. Vivamus placerat,
-                    magna non commodo suscipit, sapien lorem finibus dui, nec interdum
-                    lectus ante dictum mi.
-                </p>
-                <label for="modalCheck" class="button">Lorem ipsum!</label>
-                <input type="checkbox" id="modalCheck" style="display: none">
-                <div class="modal">
-                    <div class="modal-content">
-                        <p>Tak dobrze trafiłeś! To lorem ipsum!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item4">
-                <img src="img/item1.webp" alt="Item" loading="lazy" width="1200" height="700">
-                <div class="info-box">
-                    <h2>Lorem Ipsum</h2>
-                    <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <a href="./services.html" class="details-button2">VIEW DETAILS</a>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="slides">
-                    <div id="slide-1" class="slide">
-                        <img src="img/mainPage1.webp" alt="Lorem ipsum 1v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-2" class="slide">
-                        <img src="img/mainPage2.webp" alt="Lorem ipsum 2v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-3" class="slide">
-                        <img src="img/mainPage10.webp" alt="Lorem ipsum 3v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-4" class="slide">
-                        <img src="img/mainPage11.webp" alt="Lorem ipsum 4v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-5" class="slide">
-                        <img src="img/mainPage14.webp" alt="Lorem ipsum 5v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-6" class="slide">
-                        <img src="img/mainPage13.webp" alt="Lorem ipsum 6v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-7" class="slide">
-                        <img src="img/mainPage12.webp" alt="Lorem ipsum 7v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-8" class="slide">
-                        <img src="img/mainPage8.webp" alt="Lorem ipsum 8v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-9" class="slide">
-                        <img src="img/mainPage9.webp" alt="Lorem ipsum 9v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <input type="radio" id="slide-radio-1v2" name="slide" class="slider-radio">
-                <label for="slide-radio-1v2" class="slider-label" onclick="window.location.href='#slide-1';"></label>
-                <input type="radio" id="slide-radio-2v2" name="slide" class="slider-radio">
-                <label for="slide-radio-2v2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
-                <input type="radio" id="slide-radio-3v2" name="slide" class="slider-radio">
-                <label for="slide-radio-3v2" class="slider-label" onclick="window.location.href='#slide-3';"></label>
-                <input type="radio" id="slide-radio-4v2" name="slide" class="slider-radio">
-                <label for="slide-radio-4v2" class="slider-label" onclick="window.location.href='#slide-4';"></label>
-                <input type="radio" id="slide-radio-5v2" name="slide" class="slider-radio" checked>
-                <label for="slide-radio-5v2" class="slider-label" onclick="window.location.href='#slide-5';"></label>
-                <input type="radio" id="slide-radio-6v2" name="slide" class="slider-radio">
-                <label for="slide-radio-6v2" class="slider-label" onclick="window.location.href='#slide-6';"></label>
-                <input type="radio" id="slide-radio-7v2" name="slide" class="slider-radio">
-                <label for="slide-radio-7v2" class="slider-label" onclick="window.location.href='#slide-7';"></label>
-                <input type="radio" id="slide-radio-8v2" name="slide" class="slider-radio">
-                <label for="slide-radio-8v2" class="slider-label" onclick="window.location.href='#slide-8';"></label>
-                <input type="radio" id="slide-radio-9v2" name="slide" class="slider-radio">
-                <label for="slide-radio-9v2" class="slider-label" onclick="window.location.href='#slide-9';"></label>
-            </div>
-        </section>
-            <div class="product-grid1">
-                <div class="product-item1">
-                    <img src="img/gallery9.webp" alt="LoremIpsum" loading="lazy" width="200" height="200">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                            <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery12.webp" alt="Loremer" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja1" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja2" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja3" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja4" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja5" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery11.webp" alt="Loremer2" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja6" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja7" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja8" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja9" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja10" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery10.webp" alt="Loremer3" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja11" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja12" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja13" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja14" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja15" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid2">
-                <div class="product-item1">
-                    <img src="img/abootUs4.webp" alt="Loremer4" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja16" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja17" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja18" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja19" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja20" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs3.webp" alt="Loremer5" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja21" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja22" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja23" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja24" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja25" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs2.webp" alt="Loremer6" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja26" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja27" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja28" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja29" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja30" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs1.webp" alt="Loremer7" loading="lazy" width="200" height="200">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                            <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <section class="collection">
-            <div class="collection__men">
-                <h3 class="collection__heading">Product 1 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product1.webp" alt="product 1" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-            <div class="collection__women">
-                <h3 class="collection__heading">Product 2 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product7.webp" alt="product 2" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-            <div class="collection__kids">
-                <h3 class="collection__heading">Product 3 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product3.webp" alt="product 3" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-        </section>
-        <section class="offer">
-            <h2 style="display:none;">.</h2>
-            <div class="offer__body">
-                <img src="img/logo1transparent.webp" alt="LOGOv2" class="offer__img" loading="lazy" width="300" height="300">
-                <div class="offer__content container">
-                    <p class="offer__heading">SPECIAL OFFER</p>
-                    <p class="offer__title">UPTO 70% OFF</p>
-                    <p class="offer__text">
-                        Upgrade your footwear collection with our 70% off special deal!
-                        LOREM IPSUM!
-                    </p>
-                    <a href="./ourProducts.html" class="details-button">VIEW ALL</a>
-                </div>
-            </div>
-        </section>
-        <section class="service">
-            <div class="service__content container">
-                <div class="service__box">
-                    <img src="img/pay1.webp" alt="pay1" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">FREE SHIPING</h4>
-                        <p class="service__describe">All Lorem ipsum $150</p>
-                    </div>
-                </div>
-                <div class="service__box">
-                    <img src="img/pay2.webp" alt="pay2" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">QUICK PAYMENT</h4>
-                        <p class="service__describe">100% Lorem ipsum </p>
-                    </div>
-                </div>
-                <div class="service__box">
-                    <img src="img/pay1.webp" alt="pay3" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">FREE RETURNS</h4>
-                        <p class="service__describe">Lorem ipsum 30 days</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="load-more-container">
-            <a href="./gallery.html" class="load-more-btn">LOAD MORE PRODUCTS</a>
-        </div>
-        <div class="newsletter-signup-section">
-            <div class="newsletter-signup-container">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
-                    <p class="newsletter-description">Subscribe for the latest stories and promotions</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
-                    <button type="submit" class="newsletter-submit-btn">
-                        <img src="img/phone.svg" alt="Send" loading="lazy" width="30" height="30">
-                    </button>
-                </form>
-            </div>
-        </div>
-    </main>
+ <main>
+      <section class="photoFirst">
+          <!-- Sekcja pierwszego zestawu zdjęć -->
+          <!-- Obrazy i tekst w tej sekcji -->
+          <h2 style="display:none;">.</h2>
+          <img id="photos1" src="img/mainPage4.webp" alt="Lorem ipsum 1" loading="lazy" width="300" height="300">
+          <img id="photos2" src="img/mainPage5.webp" alt="Lorem ipsum 2" loading="lazy" width="300" height="300">
+          <img id="photos3" src="img/mainPage6.webp" alt="Lorem ipsum 3" loading="lazy" width="300" height="300">
+      </section>
+      <input type="checkbox" id="toggleImages">
+      <label for="toggleImages" id="showMoreButton" class="buttonFoto">LOAD MORE PHOTO</label>
+      <div class="photoSecond">
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg" alt="oksy1" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot1" width="140" height="140">
+          </div>
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg" alt="oksy2" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot2" width="140" height="140">
+          </div>
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg" alt="oksy3" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot3" width="140" height="140">
+          </div>
+      </div>
+      <section class="photoSecond">
+          <h2 style="display:none;">.</h2>
+          <img class="photosX" src="img/mainPage1.webp" alt="Lorem ipsum 4" loading="lazy" width="300" height="300">
+          <img class="photosX" src="img/mainPage2.webp" alt="Lorem ipsum 5" loading="lazy" width="300" height="300">
+          <img class="photosX" src="img/mainPage3.webp" alt="Lorem ipsum 6" loading="lazy" width="300" height="300">
+      </section>
+      <label for="toggleImages" id="showLessButton" class="buttonFoto">LOAD LESS PHOTO</label>
+      <div class="product-grid">
+          <div class="product-item" style="background-color: #eae9e7;">
+              <div class="product-image">
+                  <img src="img/gallery1.webp" alt="Gallery 1" loading="lazy" width="300" height="300">
+              </div>
+              <div class="product-content">
+                  <h3>LOREM IPSUM</h3>
+                  <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+              </div>
+          </div>
+          <div id="drugie" class="product-item" style="background-color: #eae9e7">
+              <div class="product-image">
+                  <img src="img/gallery2.webp" alt="Gallery 2" loading="lazy" width="300" height="300">
+              </div>
+              <div class="product-content">
+                  <h3>LOREM IPSUM</h3>
+                  <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+              </div>
+          </div>
+      </div>
+      <section class="section">
+          <h2 class="section__heading">Lorem ipsum</h2>
+          <div class="about-us__textbox">
+              <p class="about-us__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a
+                  est. Integer pulvinar dui elit, vitae vehicula est tempor venenatis.
+                  Proin pulvinar pulvinar enim, et vestibulum leo. Vivamus placerat,
+                  magna non commodo suscipit, sapien lorem finibus dui, nec interdum
+                  lectus ante dictum mi.
+              </p>
+              <label for="modalCheck" class="button">Lorem ipsum!</label>
+              <input type="checkbox" id="modalCheck" style="display: none">
+              <div class="modal">
+                  <div class="modal-content">
+                      <p>Tak dobrze trafiłeś! To lorem ipsum!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="product-item4">
+              <img src="img/item1.webp" alt="Item" loading="lazy" width="1200" height="700">
+              <div class="info-box">
+                  <h2>Lorem Ipsum</h2>
+                  <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="./services.html" class="details-button2">VIEW DETAILS</a>
+              </div>
+          </div>
+          <div class="slider">
+              <div class="slides">
+                  <div id="slide-1" class="slide">
+                      <img src="img/mainPage1.webp" alt="Lorem ipsum 1v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-2" class="slide">
+                      <img src="img/mainPage2.webp" alt="Lorem ipsum 2v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-3" class="slide">
+                      <img src="img/mainPage10.webp" alt="Lorem ipsum 3v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-4" class="slide">
+                      <img src="img/mainPage11.webp" alt="Lorem ipsum 4v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-5" class="slide">
+                      <img src="img/mainPage14.webp" alt="Lorem ipsum 5v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-6" class="slide">
+                      <img src="img/mainPage13.webp" alt="Lorem ipsum 6v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-7" class="slide">
+                      <img src="img/mainPage12.webp" alt="Lorem ipsum 7v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-8" class="slide">
+                      <img src="img/mainPage8.webp" alt="Lorem ipsum 8v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-9" class="slide">
+                      <img src="img/mainPage9.webp" alt="Lorem ipsum 9v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="slider-controls">
+              <input type="radio" id="slide-radio-1v2" name="slide" class="slider-radio">
+              <label for="slide-radio-1v2" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+              <input type="radio" id="slide-radio-2v2" name="slide" class="slider-radio">
+              <label for="slide-radio-2v2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+              <input type="radio" id="slide-radio-3v2" name="slide" class="slider-radio">
+              <label for="slide-radio-3v2" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+              <input type="radio" id="slide-radio-4v2" name="slide" class="slider-radio">
+              <label for="slide-radio-4v2" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+              <input type="radio" id="slide-radio-5v2" name="slide" class="slider-radio" checked>
+              <label for="slide-radio-5v2" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+              <input type="radio" id="slide-radio-6v2" name="slide" class="slider-radio">
+              <label for="slide-radio-6v2" class="slider-label" onclick="window.location.href='#slide-6';"></label>
+              <input type="radio" id="slide-radio-7v2" name="slide" class="slider-radio">
+              <label for="slide-radio-7v2" class="slider-label" onclick="window.location.href='#slide-7';"></label>
+              <input type="radio" id="slide-radio-8v2" name="slide" class="slider-radio">
+              <label for="slide-radio-8v2" class="slider-label" onclick="window.location.href='#slide-8';"></label>
+              <input type="radio" id="slide-radio-9v2" name="slide" class="slider-radio">
+              <label for="slide-radio-9v2" class="slider-label" onclick="window.location.href='#slide-9';"></label>
+          </div>
+      </section>
+          <div class="product-grid1">
+              <div class="product-item1">
+                  <img src="img/gallery9.webp" alt="LoremIpsum" loading="lazy" width="200" height="200">
+                  <div class="overlay">
+                      <div class="text">
+                          <h3>Lorem</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                          </p>
+                          <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery12.webp" alt="Loremer" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja1" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja2" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja3" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja4" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja5" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery11.webp" alt="Loremer2" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja6" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja7" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja8" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja9" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja10" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery10.webp" alt="Loremer3" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja11" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja12" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja13" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja14" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja15" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+          </div>
+          <div class="product-grid2">
+              <div class="product-item1">
+                  <img src="img/abootUs4.webp" alt="Loremer4" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja16" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja17" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja18" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja19" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja20" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs3.webp" alt="Loremer5" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja21" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja22" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja23" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja24" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja25" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs2.webp" alt="Loremer6" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja26" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja27" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja28" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja29" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja30" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs1.webp" alt="Loremer7" loading="lazy" width="200" height="200">
+                  <div class="overlay">
+                      <div class="text">
+                          <h3>Lorem</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                          </p>
+                          <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      <section class="collection">
+          <div class="collection__men">
+              <h3 class="collection__heading">Product 1 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product1.webp" alt="product 1" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+          <div class="collection__women">
+              <h3 class="collection__heading">Product 2 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product7.webp" alt="product 2" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+          <div class="collection__kids">
+              <h3 class="collection__heading">Product 3 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product3.webp" alt="product 3" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+      </section>
+      <section class="offer">
+          <h2 style="display:none;">.</h2>
+          <div class="offer__body">
+              <img src="img/logo1transparent.webp" alt="LOGOv2" class="offer__img" loading="lazy" width="300" height="300">
+              <div class="offer__content container">
+                  <p class="offer__heading">SPECIAL OFFER</p>
+                  <p class="offer__title">UPTO 70% OFF</p>
+                  <p class="offer__text">
+                      Upgrade your footwear collection with our 70% off special deal!
+                      LOREM IPSUM!
+                  </p>
+                  <a href="./ourProducts.html" class="details-button">VIEW ALL</a>
+              </div>
+          </div>
+      </section>
+      <section class="service">
+          <div class="service__content container">
+              <div class="service__box">
+                  <img src="img/pay1.webp" alt="pay1" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">FREE SHIPING</h4>
+                      <p class="service__describe">All Lorem ipsum $150</p>
+                  </div>
+              </div>
+              <div class="service__box">
+                  <img src="img/pay2.webp" alt="pay2" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">QUICK PAYMENT</h4>
+                      <p class="service__describe">100% Lorem ipsum </p>
+                  </div>
+              </div>
+              <div class="service__box">
+                  <img src="img/pay1.webp" alt="pay3" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">FREE RETURNS</h4>
+                      <p class="service__describe">Lorem ipsum 30 days</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="load-more-container">
+          <a href="./gallery.html" class="load-more-btn">LOAD MORE PRODUCTS</a>
+      </div>
+      <div class="newsletter-signup-section">
+          <div class="newsletter-signup-container">
+              <div class="newsletter-content">
+                  <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
+                  <p class="newsletter-description">Subscribe for the latest stories and promotions</p>
+              </div>
+              <form class="newsletter-form">
+                  <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                  <button type="submit" class="newsletter-submit-btn">
+                      <img src="img/phone.svg" alt="Send" loading="lazy" width="30" height="30">
+                  </button>
+              </form>
+          </div>
+      </div>
+  </main>
 
 Style guide: 1.0
 */
@@ -610,14 +617,14 @@ Style guide: 1.0
 /* Uniwersalne ustawienia dla obrazków */
 
 img {
-	/* aspect-ratio: attr(width)/attr(height); */
-	width: 100%;
-	height: auto;
+  /* aspect-ratio: attr(width)/attr(height); */
+  width: 100%;
+  height: auto;
 }
 
 /* Components
-   Style dla specyficznych komponentów strony jak header, navbar, itd.
-   Każda sekcja opisuje jeden komponent i jego elementy podrzędne.
+ Style dla specyficznych komponentów strony jak header, navbar, itd.
+ Każda sekcja opisuje jeden komponent i jego elementy podrzędne.
 */
 
 .header {
@@ -646,7 +653,7 @@ img {
   width: 240px;
   height: 240px;
   background-image: url("../img/logo1transparent.webp");
-  background-size:contain;
+  background-size: contain;
   animation: blink-animation 6s infinite alternate;
   transition: all 0.3s ease;
 }
@@ -661,6 +668,7 @@ img {
   justify-content: center;
   margin-top: 100px;
 }
+
 .circle {
   background: #fff;
   border-radius: 100%;
@@ -671,6 +679,7 @@ img {
   overflow: hidden;
   transform: translateZ(0);
 }
+
 .circle .logoTrans {
   color: #bdb9c700;
   font-weight: 900;
@@ -681,7 +690,9 @@ img {
   user-select: none;
   transition: color 0.8s ease-in-out;
 }
-.circle:before, .circle:after {
+
+.circle:before,
+.circle:after {
   border-radius: 100%;
   content: "";
   position: absolute;
@@ -689,38 +700,35 @@ img {
   left: 0;
   width: inherit;
   height: inherit;
-  box-shadow: inset 10.6em 0 0 
-  #001f2b33,
-    inset 0 10.6em 0 
-    #001f2b33,
-    inset -10.6em 0 0 
-    #001f2b33,
-    inset 0 -10.6em 0 
-    #001f2b33;
+  box-shadow: inset 10.6em 0 0 #001f2b33,
+      inset 0 10.6em 0 #001f2b33,
+      inset -10.6em 0 0 #001f2b33,
+      inset 0 -10.6em 0 #001f2b33;
   transition: box-shadow 0.75s;
 }
+
 .circle:after {
   transform: rotate(45deg);
 }
-.circle:hover:before, .circle:hover:after {
-  box-shadow: inset 0.86em 0 0 
-    #ff000080, 
-    inset 0 0.86em 0 
-    #fc960080,
-    inset -0.86em 0 0 
-    #00ff0080,
-    inset 0 -0.86em 0 
-    #0096ff80;
+
+.circle:hover:before,
+.circle:hover:after {
+  box-shadow: inset 0.86em 0 0 #ff000080,
+      inset 0 0.86em 0 #fc960080,
+      inset -0.86em 0 0 #00ff0080,
+      inset 0 -0.86em 0 #0096ff80;
 }
+
 .circle:hover .logoTrans {
   color: #444444;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
+  height: 4px;
   background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
   z-index: 1000;
 }
@@ -778,6 +786,7 @@ img {
   line-height: 1;
   text-decoration: none;
 }
+
 .typing-demo a:nth-child(1) {
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
@@ -975,55 +984,55 @@ W kodzie HTML znajduje się kontener **.product-grid** zawierający elementy pro
 
 Markup:
 <div class="product-grid">
-            <div class="product-item" style="background-color: #eae9e7;">
-                <div class="product-image">
-                    <img src="img/gallery1.webp" alt="Gallery 1" loading="lazy" width="300" height="300">
-                </div>
-                <div class="product-content">
-                    <h3>LOREM IPSUM</h3>
-                    <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
-                </div>
-            </div>
-            <div id="drugie" class="product-item" style="background-color: #eae9e7">
-                <div class="product-image">
-                    <img src="img/gallery2.webp" alt="Gallery 2" loading="lazy" width="300" height="300">
-                </div>
-                <div class="product-content">
-                    <h3>LOREM IPSUM</h3>
-                    <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
-                </div>
-            </div>
-        </div>
-        <section class="section">
-            <h2 class="section__heading">Lorem ipsum</h2>
-            <div class="about-us__textbox">
-                <p class="about-us__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a
-                    est. Integer pulvinar dui elit, vitae vehicula est tempor venenatis.
-                    Proin pulvinar pulvinar enim, et vestibulum leo. Vivamus placerat,
-                    magna non commodo suscipit, sapien lorem finibus dui, nec interdum
-                    lectus ante dictum mi.
-                </p>
-                <label for="modalCheck" class="button">Lorem ipsum!</label>
-                <input type="checkbox" id="modalCheck" style="display: none">
-                <div class="modal">
-                    <div class="modal-content">
-                        <p>Tak dobrze trafiłeś! To lorem ipsum!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item4">
-                <img src="img/item1.webp" alt="Item" loading="lazy" width="1200" height="700">
-                <div class="info-box">
-                    <h2>Lorem Ipsum</h2>
-                    <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <a href="./services.html" class="details-button2">VIEW DETAILS</a>
-                </div>
+          <div class="product-item" style="background-color: #eae9e7;">
+              <div class="product-image">
+                  <img src="img/gallery1.webp" alt="Gallery 1" loading="lazy" width="300" height="300">
+              </div>
+              <div class="product-content">
+                  <h3>LOREM IPSUM</h3>
+                  <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+              </div>
+          </div>
+          <div id="drugie" class="product-item" style="background-color: #eae9e7">
+              <div class="product-image">
+                  <img src="img/gallery2.webp" alt="Gallery 2" loading="lazy" width="300" height="300">
+              </div>
+              <div class="product-content">
+                  <h3>LOREM IPSUM</h3>
+                  <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+              </div>
+          </div>
+      </div>
+      <section class="section">
+          <h2 class="section__heading">Lorem ipsum</h2>
+          <div class="about-us__textbox">
+              <p class="about-us__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a
+                  est. Integer pulvinar dui elit, vitae vehicula est tempor venenatis.
+                  Proin pulvinar pulvinar enim, et vestibulum leo. Vivamus placerat,
+                  magna non commodo suscipit, sapien lorem finibus dui, nec interdum
+                  lectus ante dictum mi.
+              </p>
+              <label for="modalCheck" class="button">Lorem ipsum!</label>
+              <input type="checkbox" id="modalCheck" style="display: none">
+              <div class="modal">
+                  <div class="modal-content">
+                      <p>Tak dobrze trafiłeś! To lorem ipsum!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="product-item4">
+              <img src="img/item1.webp" alt="Item" loading="lazy" width="1200" height="700">
+              <div class="info-box">
+                  <h2>Lorem Ipsum</h2>
+                  <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="./services.html" class="details-button2">VIEW DETAILS</a>
+              </div>
 </div>
 
 Style guide: 1.2
@@ -1146,10 +1155,10 @@ label.button:hover,
 }
 
 .logoCat {
-  width: 140px; 
-  height: auto; 
-  position: relative; 
-  z-index: 1; 
+  width: 140px;
+  height: auto;
+  position: relative;
+  z-index: 1;
   animation-name: animacja1;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -1161,31 +1170,35 @@ label.button:hover,
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .glasses {
-  position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%);  
-  z-index: 2; 
-  width: 140px; 
-  height: auto; 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 140px;
+  height: auto;
   transition: all 0.3s ease;
 }
 
 .glasses:hover {
   transform: scale(1.1);
 }
+
 .glasses:nth-of-type(2) {
   animation-delay: -1.8s;
 }
+
 .glasses:nth-of-type(3) {
   animation-delay: -0.25s;
 }
+
 .glasses:nth-of-type(4) {
   animation-delay: 1.25s;
 }
+
 .glasses:nth-of-type(5) {
   animation-delay: 2.65s;
 }
@@ -1228,35 +1241,35 @@ HOME GALLERY - sekcja galerii
 **Media queries**: To reguły CSS dostosowujące stylizację dla różnych szerokości ekranu. Są zdefiniowane trzy punkty przerwania: dla ekranów o szerokości co najmniej 1000px, między 769px a 999px oraz poniżej 769px. W każdym z tych punktów przerwania dostosowywane są marginesy i układ elementów w sekcjach galerii w zależności od szerokości ekranu.
 
 Markup:
-      <section class="photoFirst">
-            <h2 style="display:none;">.</h2>
-            <img id="photos1" src="img/mainPage4.webp" alt="Lorem ipsum 1" loading="lazy" width="300" height="300">
-            <img id="photos2" src="img/mainPage5.webp" alt="Lorem ipsum 2" loading="lazy" width="300" height="300">
-            <img id="photos3" src="img/mainPage6.webp" alt="Lorem ipsum 3" loading="lazy" width="300" height="300">
-        </section>
-        <input type="checkbox" id="toggleImages">
-        <label for="toggleImages" id="showMoreButton" class="buttonFoto">LOAD MORE PHOTO</label>
-        <div class="photoSecond">
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg" alt="oksy1" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot1" width="140" height="140">
-            </div>
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg" alt="oksy2" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot2" width="140" height="140">
-            </div>
-            <div class="animation">
-                <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg" alt="oksy3" width="140" height="140">
-                <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot3" width="140" height="140">
-            </div>
-        </div>
-        <section class="photoSecond">
-            <h2 style="display:none;">.</h2>
-            <img class="photosX" src="img/mainPage1.webp" alt="Lorem ipsum 4" loading="lazy" width="300" height="300">
-            <img class="photosX" src="img/mainPage2.webp" alt="Lorem ipsum 5" loading="lazy" width="300" height="300">
-            <img class="photosX" src="img/mainPage3.webp" alt="Lorem ipsum 6" loading="lazy" width="300" height="300">
-        </section>
-        <label for="toggleImages" id="showLessButton" class="buttonFoto">LOAD LESS PHOTO</label>
+    <section class="photoFirst">
+          <h2 style="display:none;">.</h2>
+          <img id="photos1" src="img/mainPage4.webp" alt="Lorem ipsum 1" loading="lazy" width="300" height="300">
+          <img id="photos2" src="img/mainPage5.webp" alt="Lorem ipsum 2" loading="lazy" width="300" height="300">
+          <img id="photos3" src="img/mainPage6.webp" alt="Lorem ipsum 3" loading="lazy" width="300" height="300">
+      </section>
+      <input type="checkbox" id="toggleImages">
+      <label for="toggleImages" id="showMoreButton" class="buttonFoto">LOAD MORE PHOTO</label>
+      <div class="photoSecond">
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg" alt="oksy1" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot1" width="140" height="140">
+          </div>
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg" alt="oksy2" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot2" width="140" height="140">
+          </div>
+          <div class="animation">
+              <img class="glasses" src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg" alt="oksy3" width="140" height="140">
+              <img class="logoCat" src="https://kibbles.klausapp.com/assets/img/loader/main.svg" alt="cot3" width="140" height="140">
+          </div>
+      </div>
+      <section class="photoSecond">
+          <h2 style="display:none;">.</h2>
+          <img class="photosX" src="img/mainPage1.webp" alt="Lorem ipsum 4" loading="lazy" width="300" height="300">
+          <img class="photosX" src="img/mainPage2.webp" alt="Lorem ipsum 5" loading="lazy" width="300" height="300">
+          <img class="photosX" src="img/mainPage3.webp" alt="Lorem ipsum 6" loading="lazy" width="300" height="300">
+      </section>
+      <label for="toggleImages" id="showLessButton" class="buttonFoto">LOAD LESS PHOTO</label>
 
 Style guide: 1.1
 */
@@ -1303,7 +1316,7 @@ Style guide: 1.1
   margin-right: 5px;
 }
 
-.details-button{
+.details-button {
   margin-right: 5px;
   text-align: center;
   width: 200px;
@@ -1318,7 +1331,8 @@ Style guide: 1.1
   cursor: pointer;
 }
 
-.details-button:hover, .details-button1:hover {
+.details-button:hover,
+.details-button1:hover {
   background-color: var(--black-color);
   color: var(--white-color);
   text-decoration: underline;
@@ -1570,112 +1584,112 @@ Oczywiście, oto opis z pogrubionymi nazwami klas i id:
 Ogólnie rzecz biorąc, ten kod HTML i CSS jest używany do wyświetlania produktów na stronie internetowej w formie siatki, z odpowiednimi stylami i animacjami. Jest również odpowiednio dostosowany do różnych rozmiarów ekranów dzięki media queries.
 
 Markup:
-            <div class="product-grid1">
-                <div class="product-item1">
-                    <img src="img/gallery9.webp" alt="LoremIpsum" loading="lazy" width="200" height="200">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                            <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery12.webp" alt="Loremer" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja1" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja2" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja3" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja4" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja5" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery11.webp" alt="Loremer2" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja6" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja7" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja8" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja9" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja10" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/gallery10.webp" alt="Loremer3" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja11" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja12" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja13" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja14" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja15" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid2">
-                <div class="product-item1">
-                    <img src="img/abootUs4.webp" alt="Loremer4" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja16" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja17" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja18" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja19" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja20" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs3.webp" alt="Loremer5" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja21" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja22" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja23" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja24" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja25" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs2.webp" alt="Loremer6" loading="lazy" width="200" height="200">
-                    <h3>Lorem</h3>
-                    <div class="price-rating">
-                        <span class="price">30$</span>
-                        <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja26" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja27" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja28" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_zolta.svg" alt="Promocja29" loading="lazy" width="30" height="30">
-                            <img src="img/gwiazda_szara.svg" alt="Promocja30" loading="lazy" width="30" height="30">
-                        </span>
-                    </div>
-                </div>
-                <div class="product-item1">
-                    <img src="img/abootUs1.webp" alt="Loremer7" loading="lazy" width="200" height="200">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                            <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="product-grid1">
+              <div class="product-item1">
+                  <img src="img/gallery9.webp" alt="LoremIpsum" loading="lazy" width="200" height="200">
+                  <div class="overlay">
+                      <div class="text">
+                          <h3>Lorem</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                          </p>
+                          <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery12.webp" alt="Loremer" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja1" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja2" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja3" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja4" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja5" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery11.webp" alt="Loremer2" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja6" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja7" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja8" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja9" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja10" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/gallery10.webp" alt="Loremer3" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja11" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja12" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja13" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja14" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja15" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+          </div>
+          <div class="product-grid2">
+              <div class="product-item1">
+                  <img src="img/abootUs4.webp" alt="Loremer4" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja16" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja17" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja18" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja19" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja20" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs3.webp" alt="Loremer5" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja21" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja22" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja23" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja24" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja25" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs2.webp" alt="Loremer6" loading="lazy" width="200" height="200">
+                  <h3>Lorem</h3>
+                  <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="img/gwiazda_zolta.svg" alt="Promocja26" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja27" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja28" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_zolta.svg" alt="Promocja29" loading="lazy" width="30" height="30">
+                          <img src="img/gwiazda_szara.svg" alt="Promocja30" loading="lazy" width="30" height="30">
+                      </span>
+                  </div>
+              </div>
+              <div class="product-item1">
+                  <img src="img/abootUs1.webp" alt="Loremer7" loading="lazy" width="200" height="200">
+                  <div class="overlay">
+                      <div class="text">
+                          <h3>Lorem</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                          </p>
+                          <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
 Style guide: 1.4
 */
@@ -1920,7 +1934,7 @@ span .price {
   width: 20px;
 }
 
-.details-button-x{
+.details-button-x {
   margin-right: 5px;
   width: 150px;
   display: block;
@@ -2061,93 +2075,93 @@ HOME SLIDER - sekcja slider
 Ten kod definiuje stylizację slidera obrazków na stronie internetowej, obejmując różne elementy i efekty, takie jak animacje, przyciski, kontrolery i wiele innych, aby stworzyć atrakcyjny i interaktywny slider.
 
 Markup:
-  <div class="slider">
-                <div class="slides">
-                    <div id="slide-1" class="slide">
-                        <img src="img/mainPage1.webp" alt="Lorem ipsum 1v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-2" class="slide">
-                        <img src="img/mainPage2.webp" alt="Lorem ipsum 2v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-3" class="slide">
-                        <img src="img/mainPage10.webp" alt="Lorem ipsum 3v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-4" class="slide">
-                        <img src="img/mainPage11.webp" alt="Lorem ipsum 4v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-5" class="slide">
-                        <img src="img/mainPage14.webp" alt="Lorem ipsum 5v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-6" class="slide">
-                        <img src="img/mainPage13.webp" alt="Lorem ipsum 6v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-7" class="slide">
-                        <img src="img/mainPage12.webp" alt="Lorem ipsum 7v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-8" class="slide">
-                        <img src="img/mainPage8.webp" alt="Lorem ipsum 8v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                    <div id="slide-9" class="slide">
-                        <img src="img/mainPage9.webp" alt="Lorem ipsum 9v2" loading="lazy" width="260" height="400">
-                        <div class="slide-description">
-                            <p class="product-name">Lorem Ipsum</p>
-                            <p class="price">10$</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <input type="radio" id="slide-radio-1v2" name="slide" class="slider-radio">
-                <label for="slide-radio-1v2" class="slider-label" onclick="window.location.href='#slide-1';"></label>
-                <input type="radio" id="slide-radio-2v2" name="slide" class="slider-radio">
-                <label for="slide-radio-2v2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
-                <input type="radio" id="slide-radio-3v2" name="slide" class="slider-radio">
-                <label for="slide-radio-3v2" class="slider-label" onclick="window.location.href='#slide-3';"></label>
-                <input type="radio" id="slide-radio-4v2" name="slide" class="slider-radio">
-                <label for="slide-radio-4v2" class="slider-label" onclick="window.location.href='#slide-4';"></label>
-                <input type="radio" id="slide-radio-5v2" name="slide" class="slider-radio" checked>
-                <label for="slide-radio-5v2" class="slider-label" onclick="window.location.href='#slide-5';"></label>
-                <input type="radio" id="slide-radio-6v2" name="slide" class="slider-radio">
-                <label for="slide-radio-6v2" class="slider-label" onclick="window.location.href='#slide-6';"></label>
-                <input type="radio" id="slide-radio-7v2" name="slide" class="slider-radio">
-                <label for="slide-radio-7v2" class="slider-label" onclick="window.location.href='#slide-7';"></label>
-                <input type="radio" id="slide-radio-8v2" name="slide" class="slider-radio">
-                <label for="slide-radio-8v2" class="slider-label" onclick="window.location.href='#slide-8';"></label>
-                <input type="radio" id="slide-radio-9v2" name="slide" class="slider-radio">
-                <label for="slide-radio-9v2" class="slider-label" onclick="window.location.href='#slide-9';"></label>
-            </div>
+<div class="slider">
+              <div class="slides">
+                  <div id="slide-1" class="slide">
+                      <img src="img/mainPage1.webp" alt="Lorem ipsum 1v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-2" class="slide">
+                      <img src="img/mainPage2.webp" alt="Lorem ipsum 2v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-3" class="slide">
+                      <img src="img/mainPage10.webp" alt="Lorem ipsum 3v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-4" class="slide">
+                      <img src="img/mainPage11.webp" alt="Lorem ipsum 4v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-5" class="slide">
+                      <img src="img/mainPage14.webp" alt="Lorem ipsum 5v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-6" class="slide">
+                      <img src="img/mainPage13.webp" alt="Lorem ipsum 6v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-7" class="slide">
+                      <img src="img/mainPage12.webp" alt="Lorem ipsum 7v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-8" class="slide">
+                      <img src="img/mainPage8.webp" alt="Lorem ipsum 8v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+                  <div id="slide-9" class="slide">
+                      <img src="img/mainPage9.webp" alt="Lorem ipsum 9v2" loading="lazy" width="260" height="400">
+                      <div class="slide-description">
+                          <p class="product-name">Lorem Ipsum</p>
+                          <p class="price">10$</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="slider-controls">
+              <input type="radio" id="slide-radio-1v2" name="slide" class="slider-radio">
+              <label for="slide-radio-1v2" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+              <input type="radio" id="slide-radio-2v2" name="slide" class="slider-radio">
+              <label for="slide-radio-2v2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+              <input type="radio" id="slide-radio-3v2" name="slide" class="slider-radio">
+              <label for="slide-radio-3v2" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+              <input type="radio" id="slide-radio-4v2" name="slide" class="slider-radio">
+              <label for="slide-radio-4v2" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+              <input type="radio" id="slide-radio-5v2" name="slide" class="slider-radio" checked>
+              <label for="slide-radio-5v2" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+              <input type="radio" id="slide-radio-6v2" name="slide" class="slider-radio">
+              <label for="slide-radio-6v2" class="slider-label" onclick="window.location.href='#slide-6';"></label>
+              <input type="radio" id="slide-radio-7v2" name="slide" class="slider-radio">
+              <label for="slide-radio-7v2" class="slider-label" onclick="window.location.href='#slide-7';"></label>
+              <input type="radio" id="slide-radio-8v2" name="slide" class="slider-radio">
+              <label for="slide-radio-8v2" class="slider-label" onclick="window.location.href='#slide-8';"></label>
+              <input type="radio" id="slide-radio-9v2" name="slide" class="slider-radio">
+              <label for="slide-radio-9v2" class="slider-label" onclick="window.location.href='#slide-9';"></label>
+          </div>
 
 Style guide: 1.3
 */
@@ -2213,7 +2227,7 @@ Style guide: 1.3
   color: var(--white-color);
 }
 
-.offer__img{
+.offer__img {
   width: 100%;
   height: 100%;
   max-width: 400px;
@@ -2412,86 +2426,86 @@ HOME OFERTA/SERWIS - sekcja ofert
 Ten opis przedstawia działanie stylów CSS dla różnych elementów na stronie internetowej, korzystając z nazw klas i id.
 
 Markup:
-  <section class="collection">
-            <div class="collection__men">
-                <h3 class="collection__heading">Product 1 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product1.webp" alt="product 1" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-            <div class="collection__women">
-                <h3 class="collection__heading">Product 2 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product7.webp" alt="product 2" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-            <div class="collection__kids">
-                <h3 class="collection__heading">Product 3 Collection</h3>
-                <div class="collection__shadow">
-                    <img src="img/product3.webp" alt="product 3" class="collection__img" loading="lazy" width="150" height="150">
-                </div>
-                <a class="collection__btn" href="./ourProducts.html">explore more</a>
-            </div>
-        </section>
-        <section class="offer">
-            <h2 style="display:none;">.</h2>
-            <div class="offer__body">
-                <img src="img/logo1transparent.webp" alt="LOGOv2" class="offer__img" loading="lazy" width="300" height="300">
-                <div class="offer__content container">
-                    <p class="offer__heading">SPECIAL OFFER</p>
-                    <p class="offer__title">UPTO 70% OFF</p>
-                    <p class="offer__text">
-                        Upgrade your footwear collection with our 70% off special deal!
-                        LOREM IPSUM!
-                    </p>
-                    <a href="./ourProducts.html" class="details-button">VIEW ALL</a>
-                </div>
-            </div>
-        </section>
-        <section class="service">
-            <div class="service__content container">
-                <div class="service__box">
-                    <img src="img/pay1.webp" alt="pay1" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">FREE SHIPING</h4>
-                        <p class="service__describe">All Lorem ipsum $150</p>
-                    </div>
-                </div>
-                <div class="service__box">
-                    <img src="img/pay2.webp" alt="pay2" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">QUICK PAYMENT</h4>
-                        <p class="service__describe">100% Lorem ipsum </p>
-                    </div>
-                </div>
-                <div class="service__box">
-                    <img src="img/pay1.webp" alt="pay3" loading="lazy" width="150" height="150">
-                    <div class="service__text">
-                        <h4 class="service__title">FREE RETURNS</h4>
-                        <p class="service__describe">Lorem ipsum 30 days</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="load-more-container">
-            <a href="./gallery.html" class="load-more-btn">LOAD MORE PRODUCTS</a>
-        </div>
-        <div class="newsletter-signup-section">
-            <div class="newsletter-signup-container">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
-                    <p class="newsletter-description">Subscribe for the latest stories and promotions</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
-                    <button type="submit" class="newsletter-submit-btn">
-                        <img src="img/phone.svg" alt="Send" loading="lazy" width="30" height="30">
-                    </button>
-                </form>
-            </div>
-        </div>
+<section class="collection">
+          <div class="collection__men">
+              <h3 class="collection__heading">Product 1 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product1.webp" alt="product 1" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+          <div class="collection__women">
+              <h3 class="collection__heading">Product 2 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product7.webp" alt="product 2" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+          <div class="collection__kids">
+              <h3 class="collection__heading">Product 3 Collection</h3>
+              <div class="collection__shadow">
+                  <img src="img/product3.webp" alt="product 3" class="collection__img" loading="lazy" width="150" height="150">
+              </div>
+              <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          </div>
+      </section>
+      <section class="offer">
+          <h2 style="display:none;">.</h2>
+          <div class="offer__body">
+              <img src="img/logo1transparent.webp" alt="LOGOv2" class="offer__img" loading="lazy" width="300" height="300">
+              <div class="offer__content container">
+                  <p class="offer__heading">SPECIAL OFFER</p>
+                  <p class="offer__title">UPTO 70% OFF</p>
+                  <p class="offer__text">
+                      Upgrade your footwear collection with our 70% off special deal!
+                      LOREM IPSUM!
+                  </p>
+                  <a href="./ourProducts.html" class="details-button">VIEW ALL</a>
+              </div>
+          </div>
+      </section>
+      <section class="service">
+          <div class="service__content container">
+              <div class="service__box">
+                  <img src="img/pay1.webp" alt="pay1" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">FREE SHIPING</h4>
+                      <p class="service__describe">All Lorem ipsum $150</p>
+                  </div>
+              </div>
+              <div class="service__box">
+                  <img src="img/pay2.webp" alt="pay2" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">QUICK PAYMENT</h4>
+                      <p class="service__describe">100% Lorem ipsum </p>
+                  </div>
+              </div>
+              <div class="service__box">
+                  <img src="img/pay1.webp" alt="pay3" loading="lazy" width="150" height="150">
+                  <div class="service__text">
+                      <h4 class="service__title">FREE RETURNS</h4>
+                      <p class="service__describe">Lorem ipsum 30 days</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="load-more-container">
+          <a href="./gallery.html" class="load-more-btn">LOAD MORE PRODUCTS</a>
+      </div>
+      <div class="newsletter-signup-section">
+          <div class="newsletter-signup-container">
+              <div class="newsletter-content">
+                  <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
+                  <p class="newsletter-description">Subscribe for the latest stories and promotions</p>
+              </div>
+              <form class="newsletter-form">
+                  <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                  <button type="submit" class="newsletter-submit-btn">
+                      <img src="img/phone.svg" alt="Send" loading="lazy" width="30" height="30">
+                  </button>
+              </form>
+          </div>
+      </div>
 
 Style guide: 1.5
 */
@@ -2504,7 +2518,7 @@ footer {
   width: 100%;
 }
 
-#socialmedia{
+#socialmedia {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -2542,8 +2556,8 @@ footer img:hover {
 }
 
 /* Media queries
-   Sekcja zawiera media queries dla responsywności strony.
-   Dostosowanie układu i stylów komponentów dla różnych rozmiarów ekranów.
+ Sekcja zawiera media queries dla responsywności strony.
+ Dostosowanie układu i stylów komponentów dla różnych rozmiarów ekranów.
 */
 
 @media (max-width:1200px) {
@@ -2566,7 +2580,7 @@ footer img:hover {
       justify-items: center;
       grid-template-columns: repeat(3, 250px);
   }
-	
+
   .photoSecond {
       margin-left: 0px;
       justify-items: center;
@@ -2606,7 +2620,8 @@ footer img:hover {
   }
 
   .details-button,
-  .details-button2, .details-button1 {
+  .details-button2,
+  .details-button1 {
       width: 150px;
       margin: 10px;
   }
@@ -2615,8 +2630,8 @@ footer img:hover {
 }
 
 @media (max-width: 768px) {
-  .product-grid{
-    flex-direction: column;
+  .product-grid {
+      flex-direction: column;
   }
 
 
@@ -2638,12 +2653,12 @@ footer img:hover {
       display: flex;
   }
 
-  nav{
-    padding-top: 22px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--eighth-color);
+  nav {
+      padding-top: 22px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      background-color: var(--eighth-color);
   }
 
   .navbar-links {
@@ -2654,11 +2669,11 @@ footer img:hover {
       padding: 0px;
   }
 
-  .navbar{
-    padding: 0;
-    align-items: normal;
-    background-color: transparent;
-    display: flex;
+  .navbar {
+      padding: 0;
+      align-items: normal;
+      background-color: transparent;
+      display: flex;
   }
 
   .nav ul li {
@@ -2695,7 +2710,8 @@ footer img:hover {
   }
 
   .details-button,
-  .details-button2, .details-button1 {
+  .details-button2,
+  .details-button1 {
       width: 150px;
       margin: 10px;
   }
@@ -2863,9 +2879,9 @@ footer img:hover {
       color: var(--white-color);
       border-bottom-color: var(--white-color);
   }
-  
-  nav ul{
-    margin-right: 10px;
+
+  nav ul {
+      margin-right: 10px;
   }
 
   .nav {

@@ -97,11 +97,12 @@ body {
   text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
+  height: 4px;
   background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
   z-index: 1000;
 }
@@ -489,133 +490,133 @@ PRODUKTY - sekcja nasze produkty
 - Media queries (`@media`): Są dostępne dwa media queries, które dostosowują stylizację dla różnych szerokości ekranu. W szczególności zmieniają szerokość produktów w zależności od szerokości ekranu.
 
 Markup:
- <main>
-        <section class="products">
-            <h1 style="display:none;">.</h1>
-            <h2 style="display:none;">.</h2>
-            <input type="radio" id="all" name="category" checked>
-            <label for="all">All</label>
-            <input type="radio" id="men" name="category">
-            <label for="men">Men</label>
-            <input type="radio" id="women" name="category">
-            <label for="women">Women</label>
-            <input type="radio" id="kids" name="category">
-            <label for="kids">Kids</label>
-            <section class="product_men-main">
-                <div class="product_men">
-                    <img src="img/product1.webp" alt="Men photo item1" loading="lazy" width="250" height="250">
-                    <h3>Men product 1</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-                <div class="product_men">
-                    <img src="img/product2.webp" alt="Men photo item2" loading="lazy" width="250" height="250">
-                    <h3>Men product 2</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-                <div class="product_men">
-                    <img src="img/product3.webp" alt="Men photo item3" loading="lazy" width="250" height="250">
-                    <h3>Men product 3</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-                <div class="product_men">
-                    <img src="img/product4.webp" alt="Men photo item4" loading="lazy" width="250" height="250">
-                    <h3>Men product 4</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-                <div class="product_men">
-                    <img src="img/product5.webp" alt="Men photo item5" loading="lazy" width="250" height="250">
-                    <h3>Men product 5</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-                <div class="product_men">
-                    <img src="img/product6.webp" alt="Men photo item6" loading="lazy" width="250" height="250">
-                    <h3>Men product 6</h3>
-                    <p>$10.00</p>
-                    <a href="./productFirst.html">View Product</a>
-                </div>
-            </section>
-            <section class="product_women-main">
-                <div class="product_women">
-                    <img src="img/product7.webp" alt="Women photo item1" loading="lazy" width="250" height="250">
-                    <h3>Women product 1</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-                <div class="product_women">
-                    <img src="img/product8.webp" alt="Women photo item2" loading="lazy" width="250" height="250">
-                    <h3>Women product 2</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-                <div class="product_women">
-                    <img src="img/product9.webp" alt="Women photo item3" loading="lazy" width="250" height="250">
-                    <h3>Women product 3</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-                <div class="product_women">
-                    <img src="img/product10.webp" alt="Women photo item4" loading="lazy" width="250" height="250">
-                    <h3>Women product 4</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-                <div class="product_women">
-                    <img src="img/product11.webp" alt="Women photo item5" loading="lazy" width="250" height="250">
-                    <h3>Women product 5</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-                <div class="product_women">
-                    <img src="img/product12.webp" alt="Women photo item6" loading="lazy" width="250" height="250">
-                    <h3>Women product 6</h3>
-                    <p>$99.00</p>
-                    <a href="./productSecond.html">View Product</a>
-                </div>
-            </section>
-            <section class="product_kids-main">
-                <div class="product_kids">
-                    <img src="img/product4.webp" alt="Kids photo item1" loading="lazy" width="250" height="250">
-                    <h3>Kids product 1</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-                <div class="product_kids">
-                    <img src="img/product14.webp" alt="Kids photo item2" loading="lazy" width="250" height="250">
-                    <h3>Kids product 2</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-                <div class="product_kids">
-                    <img src="img/product15.webp" alt="Kids photo item3" loading="lazy" width="250" height="250">
-                    <h3>Kids product 3</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-                <div class="product_kids">
-                    <img src="img/product16.webp" alt="Kids photo item4" loading="lazy" width="250" height="250">
-                    <h3>Kids product 4</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-                <div class="product_kids">
-                    <img src="img/product8.webp" alt="Kids photo item5" loading="lazy" width="250" height="250">
-                    <h3>Kids product 5</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-                <div class="product_kids">
-                    <img src="img/product18.webp" alt="Kids photo item6" loading="lazy" width="250" height="250">
-                    <h3>Kids product 6</h3>
-                    <p>$30.00</p>
-                    <a href="./productThird.html">View Product</a>
-                </div>
-            </section>
-        </section>
+<main>
+      <section class="products">
+          <h1 style="display:none;">.</h1>
+          <h2 style="display:none;">.</h2>
+          <input type="radio" id="all" name="category" checked>
+          <label for="all">All</label>
+          <input type="radio" id="men" name="category">
+          <label for="men">Men</label>
+          <input type="radio" id="women" name="category">
+          <label for="women">Women</label>
+          <input type="radio" id="kids" name="category">
+          <label for="kids">Kids</label>
+          <section class="product_men-main">
+              <div class="product_men">
+                  <img src="img/product1.webp" alt="Men photo item1" loading="lazy" width="250" height="250">
+                  <h3>Men product 1</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+              <div class="product_men">
+                  <img src="img/product2.webp" alt="Men photo item2" loading="lazy" width="250" height="250">
+                  <h3>Men product 2</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+              <div class="product_men">
+                  <img src="img/product3.webp" alt="Men photo item3" loading="lazy" width="250" height="250">
+                  <h3>Men product 3</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+              <div class="product_men">
+                  <img src="img/product4.webp" alt="Men photo item4" loading="lazy" width="250" height="250">
+                  <h3>Men product 4</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+              <div class="product_men">
+                  <img src="img/product5.webp" alt="Men photo item5" loading="lazy" width="250" height="250">
+                  <h3>Men product 5</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+              <div class="product_men">
+                  <img src="img/product6.webp" alt="Men photo item6" loading="lazy" width="250" height="250">
+                  <h3>Men product 6</h3>
+                  <p>$10.00</p>
+                  <a href="./productFirst.html">View Product</a>
+              </div>
+          </section>
+          <section class="product_women-main">
+              <div class="product_women">
+                  <img src="img/product7.webp" alt="Women photo item1" loading="lazy" width="250" height="250">
+                  <h3>Women product 1</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+              <div class="product_women">
+                  <img src="img/product8.webp" alt="Women photo item2" loading="lazy" width="250" height="250">
+                  <h3>Women product 2</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+              <div class="product_women">
+                  <img src="img/product9.webp" alt="Women photo item3" loading="lazy" width="250" height="250">
+                  <h3>Women product 3</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+              <div class="product_women">
+                  <img src="img/product10.webp" alt="Women photo item4" loading="lazy" width="250" height="250">
+                  <h3>Women product 4</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+              <div class="product_women">
+                  <img src="img/product11.webp" alt="Women photo item5" loading="lazy" width="250" height="250">
+                  <h3>Women product 5</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+              <div class="product_women">
+                  <img src="img/product12.webp" alt="Women photo item6" loading="lazy" width="250" height="250">
+                  <h3>Women product 6</h3>
+                  <p>$99.00</p>
+                  <a href="./productSecond.html">View Product</a>
+              </div>
+          </section>
+          <section class="product_kids-main">
+              <div class="product_kids">
+                  <img src="img/product4.webp" alt="Kids photo item1" loading="lazy" width="250" height="250">
+                  <h3>Kids product 1</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+              <div class="product_kids">
+                  <img src="img/product14.webp" alt="Kids photo item2" loading="lazy" width="250" height="250">
+                  <h3>Kids product 2</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+              <div class="product_kids">
+                  <img src="img/product15.webp" alt="Kids photo item3" loading="lazy" width="250" height="250">
+                  <h3>Kids product 3</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+              <div class="product_kids">
+                  <img src="img/product16.webp" alt="Kids photo item4" loading="lazy" width="250" height="250">
+                  <h3>Kids product 4</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+              <div class="product_kids">
+                  <img src="img/product8.webp" alt="Kids photo item5" loading="lazy" width="250" height="250">
+                  <h3>Kids product 5</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+              <div class="product_kids">
+                  <img src="img/product18.webp" alt="Kids photo item6" loading="lazy" width="250" height="250">
+                  <h3>Kids product 6</h3>
+                  <p>$30.00</p>
+                  <a href="./productThird.html">View Product</a>
+              </div>
+          </section>
+      </section>
 </main>
 
 Style guide: 4.0
@@ -683,19 +684,19 @@ footer img:hover {
       padding: 0px;
   }
 
-  nav{
-    padding-top: 22px;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--eighth-color);
+  nav {
+      padding-top: 22px;
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      background-color: var(--eighth-color);
   }
 
-  .navbar{
-    padding: 0;
-    align-items: normal;
-    background-color: transparent;
-    display: flex;
+  .navbar {
+      padding: 0;
+      align-items: normal;
+      background-color: transparent;
+      display: flex;
   }
 
 
@@ -741,16 +742,16 @@ footer img:hover {
   }
 
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: flex-end;
-    justify-content: flex-start;
-    text-align: center;
-}
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: flex-end;
+      justify-content: flex-start;
+      text-align: center;
+  }
 
 
   .logo img {
@@ -781,11 +782,11 @@ footer img:hover {
   }
 
   nav {
-    padding-top: 22px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--eighth-color);
-}
+      padding-top: 22px;
+      display: flex;
+      justify-content: center;
+      background-color: var(--eighth-color);
+  }
 
   nav ul {
       width: 100%;

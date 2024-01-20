@@ -133,20 +133,21 @@ body {
     text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
     position: fixed;
     left: 0;
     width: 100vw;
-    height: 4px; 
+    height: 4px;
     background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
     z-index: 1000;
 }
-  
+
 .loading-top {
     top: 0;
     z-index: 1001;
 }
-  
+
 .loading-bottom {
     bottom: 0;
     z-index: 1000;
@@ -318,20 +319,22 @@ main {
     margin-bottom: 100px;
 }
 
-#relativeTemplate{
+#relativeTemplate {
     position: relative;
     width: 100%;
     height: 100%;
     height: 70vh;
 }
 
-#relativ, #background2 {
+#relativ,
+#background2 {
     position: absolute;
     border-radius: 50%;
     width: 300px;
     height: 300px;
 }
-#background3{
+
+#background3 {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-left: 600px;
     margin-top: 400px;
@@ -360,7 +363,7 @@ main {
     background-color: rgba(44, 40, 40, 0.7)
 }
 
-#relativ2{
+#relativ2 {
     position: absolute;
     background-color: whitesmoke;
     z-index: 4;
@@ -372,18 +375,18 @@ main {
     height: 300px;
 }
 
-#relativ2 h3{
+#relativ2 h3 {
     text-align: center;
     font-size: 1.5rem;
 }
 
-#relativ2 > ul > li{
+#relativ2 > ul > li {
     list-style-type: lower-greek;
     font-size: 1.2rem;
     margin-left: 20px;
 }
 
-#relativ2 > a{
+#relativ2 > a {
     margin-left: 50px;
     border-radius: 20px;
     text-decoration: none;
@@ -392,7 +395,7 @@ main {
     border: 1px solid rgb(49, 49, 49);
 }
 
-#relativ2 > a:hover{
+#relativ2 > a:hover {
     background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
 }
@@ -408,55 +411,55 @@ main {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: rgba(140, 0, 255, 0.247); 
+    background-color: rgba(140, 0, 255, 0.247);
     border-radius: 50%;
-  }
+}
 
-  .circle {
+.circle {
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
-  }
+}
 
-  .circle:nth-child(1) {
+.circle:nth-child(1) {
     width: 100%;
     height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .circle:nth-child(2) {
+.circle:nth-child(2) {
     width: 80%;
     height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .circle:nth-child(3) {
+.circle:nth-child(3) {
     width: 60%;
     height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .circle:nth-child(4) {
+.circle:nth-child(4) {
     width: 40%;
     height: 40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .circle:nth-child(5) {
+.circle:nth-child(5) {
     width: 20%;
     height: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 .about-us__container {
     max-width: 1200px;
@@ -677,15 +680,17 @@ footer img:hover {
     transform: scale(1.2);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-    #relativ, #background2 {
+    #relativ,
+    #background2 {
         position: absolute;
         border-radius: 50%;
         width: 300px;
         height: 300px;
     }
-    #background3{
+
+    #background3 {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 300px;
         margin-top: 400px;
@@ -694,7 +699,7 @@ footer img:hover {
         border-radius: 50%;
         position: absolute;
     }
-    
+
     #background2 {
         box-shadow: #000000 0px 0px 20px 0px;
         background-color: lightgrey;
@@ -704,7 +709,7 @@ footer img:hover {
         left: 20;
         z-index: 2;
     }
-    
+
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 300px;
@@ -713,8 +718,8 @@ footer img:hover {
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
-    
-    #relativ2{
+
+    #relativ2 {
         position: absolute;
         background-color: whitesmoke;
         z-index: 4;
@@ -725,19 +730,19 @@ footer img:hover {
         width: 300px;
         height: 300px;
     }
-    
-    #relativ2 h3{
+
+    #relativ2 h3 {
         text-align: center;
         font-size: 1.5rem;
     }
-    
-    #relativ2 > ul > li{
+
+    #relativ2 > ul > li {
         list-style-type: lower-greek;
         font-size: 1.2rem;
         margin-left: 20px;
     }
-    
-    #relativ2 > a{
+
+    #relativ2 > a {
         margin-left: 50px;
         border-radius: 20px;
         text-decoration: none;
@@ -745,72 +750,72 @@ footer img:hover {
         padding: 10px 10px;
         border: 1px solid rgb(49, 49, 49);
     }
-    
-    #relativ2 > a:hover{
+
+    #relativ2 > a:hover {
         background-color: rgb(49, 49, 49);
         color: rgb(255, 255, 255);
     }
-    
+
     #background3 {
         top: 10;
         left: 20;
         z-index: 3;
         background-color: var(--first-color);
     }
-    
+
     .pattern-container {
         position: relative;
         width: 120px;
         height: 120px;
-        background-color: rgba(140, 0, 255, 0.247); 
+        background-color: rgba(140, 0, 255, 0.247);
         border-radius: 50%;
-      }
-    
-      .circle {
+    }
+
+    .circle {
         position: absolute;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.3);
-      }
-    
-      .circle:nth-child(1) {
+    }
+
+    .circle:nth-child(1) {
         width: 100%;
         height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(2) {
+    }
+
+    .circle:nth-child(2) {
         width: 80%;
         height: 80%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(3) {
+    }
+
+    .circle:nth-child(3) {
         width: 60%;
         height: 60%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(4) {
+    }
+
+    .circle:nth-child(4) {
         width: 40%;
         height: 40%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(5) {
+    }
+
+    .circle:nth-child(5) {
         width: 20%;
         height: 20%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+    }
 }
 
 
@@ -838,20 +843,20 @@ footer img:hover {
         border: 0px;
     }
 
-    nav{
+    nav {
         padding-top: 22px;
         margin-top: 20px;
         display: flex;
         align-items: flex-start;
         background-color: var(--eighth-color);
-      }
+    }
 
-      .navbar{
+    .navbar {
         padding: 0;
         align-items: normal;
         background-color: transparent;
         display: flex;
-      }
+    }
 
     #toggle:checked ~ .navbar-links {
         display: flex;
@@ -878,17 +883,19 @@ footer img:hover {
 
 @media (max-width: 650px) {
 
-    #relativeTemplate{
+    #relativeTemplate {
         height: 50vh;
     }
 
-    #relativ, #background2 {
+    #relativ,
+    #background2 {
         position: absolute;
         border-radius: 50%;
         width: 200px;
         height: 200px;
     }
-    #background3{
+
+    #background3 {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 200px;
         margin-top: 200px;
@@ -897,7 +904,7 @@ footer img:hover {
         border-radius: 50%;
         position: absolute;
     }
-    
+
     #background2 {
         box-shadow: #000000 0px 0px 20px 0px;
         background-color: lightgrey;
@@ -907,7 +914,7 @@ footer img:hover {
         left: 20;
         z-index: 2;
     }
-    
+
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 200px;
@@ -916,8 +923,8 @@ footer img:hover {
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
-    
-    #relativ2{
+
+    #relativ2 {
         position: absolute;
         background-color: whitesmoke;
         z-index: 4;
@@ -928,19 +935,19 @@ footer img:hover {
         width: 220px;
         height: 250px;
     }
-    
-    #relativ2 h3{
+
+    #relativ2 h3 {
         text-align: center;
         font-size: 1.5rem;
     }
-    
-    #relativ2 > ul > li{
+
+    #relativ2 > ul > li {
         list-style-type: lower-greek;
         font-size: 1.0rem;
         margin-left: 20px;
     }
-    
-    #relativ2 > a{
+
+    #relativ2 > a {
         margin-left: 50px;
         border-radius: 20px;
         text-decoration: none;
@@ -948,82 +955,82 @@ footer img:hover {
         padding: 10px 10px;
         border: 1px solid rgb(49, 49, 49);
     }
-    
-    #relativ2 > a:hover{
+
+    #relativ2 > a:hover {
         background-color: rgb(49, 49, 49);
         color: rgb(255, 255, 255);
     }
-    
+
     #background3 {
         top: 10;
         left: 20;
         z-index: 3;
         background-color: var(--first-color);
     }
-    
+
     .pattern-container {
         position: relative;
         width: 80px;
         height: 80px;
-        background-color: rgba(140, 0, 255, 0.247); 
+        background-color: rgba(140, 0, 255, 0.247);
         border-radius: 50%;
-      }
-    
-      .circle {
+    }
+
+    .circle {
         position: absolute;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.3);
-      }
-    
-      .circle:nth-child(1) {
+    }
+
+    .circle:nth-child(1) {
         width: 100%;
         height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(2) {
+    }
+
+    .circle:nth-child(2) {
         width: 80%;
         height: 80%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(3) {
+    }
+
+    .circle:nth-child(3) {
         width: 60%;
         height: 60%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(4) {
+    }
+
+    .circle:nth-child(4) {
         width: 40%;
         height: 40%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(5) {
+    }
+
+    .circle:nth-child(5) {
         width: 20%;
         height: 20%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+    }
 
     .about-us__img {
         min-width: 300px;
     }
 
-    
+
     .about-us__container {
         padding: 0rem;
     }
-    
+
     #hamburger {
         display: flex;
         color: var(--white-color);
@@ -1061,7 +1068,7 @@ footer img:hover {
         justify-content: flex-start;
         text-align: center;
     }
-  
+
 
     .logo img {
         border-radius: 50px;
@@ -1168,18 +1175,20 @@ footer img:hover {
     }
 }
 
-@media (max-width: 530px){
-    #relativeTemplate{
+@media (max-width: 530px) {
+    #relativeTemplate {
         height: 50vh;
     }
 
-    #relativ, #background2 {
+    #relativ,
+    #background2 {
         position: absolute;
         border-radius: 50%;
         width: 200px;
         height: 200px;
     }
-    #background3{
+
+    #background3 {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 100px;
         margin-top: 270px;
@@ -1188,7 +1197,7 @@ footer img:hover {
         border-radius: 50%;
         position: absolute;
     }
-    
+
     #background2 {
         box-shadow: #000000 0px 0px 20px 0px;
         background-color: lightgrey;
@@ -1198,7 +1207,7 @@ footer img:hover {
         left: 20;
         z-index: 2;
     }
-    
+
     #relativ {
         box-shadow: #000000 0px 0px 20px 0px;
         margin-left: 100px;
@@ -1207,8 +1216,8 @@ footer img:hover {
         z-index: 1;
         background-color: rgba(44, 40, 40, 0.7)
     }
-    
-    #relativ2{
+
+    #relativ2 {
         position: absolute;
         background-color: whitesmoke;
         z-index: 4;
@@ -1219,19 +1228,19 @@ footer img:hover {
         width: 180px;
         height: 250px;
     }
-    
-    #relativ2 h3{
+
+    #relativ2 h3 {
         text-align: center;
         font-size: 1.5rem;
     }
-    
-    #relativ2 > ul > li{
+
+    #relativ2 > ul > li {
         list-style-type: lower-greek;
         font-size: 1.0rem;
         margin-left: 20px;
     }
-    
-    #relativ2 > a{
+
+    #relativ2 > a {
         margin-left: 35px;
         border-radius: 20px;
         text-decoration: none;
@@ -1239,72 +1248,72 @@ footer img:hover {
         padding: 10px 10px;
         border: 1px solid rgb(49, 49, 49);
     }
-    
-    #relativ2 > a:hover{
+
+    #relativ2 > a:hover {
         background-color: rgb(49, 49, 49);
         color: rgb(255, 255, 255);
     }
-    
+
     #background3 {
         top: 10;
         left: 20;
         z-index: 3;
         background-color: var(--first-color);
     }
-    
+
     .pattern-container {
         position: relative;
         width: 80px;
         height: 80px;
-        background-color: rgba(140, 0, 255, 0.247); 
+        background-color: rgba(140, 0, 255, 0.247);
         border-radius: 50%;
-      }
-    
-      .circle {
+    }
+
+    .circle {
         position: absolute;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.3);
-      }
-    
-      .circle:nth-child(1) {
+    }
+
+    .circle:nth-child(1) {
         width: 100%;
         height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(2) {
+    }
+
+    .circle:nth-child(2) {
         width: 80%;
         height: 80%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(3) {
+    }
+
+    .circle:nth-child(3) {
         width: 60%;
         height: 60%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(4) {
+    }
+
+    .circle:nth-child(4) {
         width: 40%;
         height: 40%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-    
-      .circle:nth-child(5) {
+    }
+
+    .circle:nth-child(5) {
         width: 20%;
         height: 20%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+    }
 
-    
+
 }

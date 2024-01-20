@@ -1,4 +1,3 @@
-
 /* Root variables
    Definicje kolorów używanych w całej stronie.
    --bg-color, --bg2-color: Główne kolory tła.
@@ -152,11 +151,12 @@ body {
   text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
+  height: 4px;
   background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
   z-index: 1000;
 }
@@ -336,7 +336,7 @@ main {
   margin-bottom: 100px;
 }
 
-#relativeTemplate{
+#relativeTemplate {
   position: relative;
   margin-top: -50px;
   width: 100%;
@@ -344,7 +344,8 @@ main {
   height: 50vh;
 }
 
-#relativ, #background2 {
+#relativ,
+#background2 {
   position: absolute;
   border-radius: 50%;
   width: 300px;
@@ -371,7 +372,7 @@ main {
   background-color: rgba(44, 40, 40, 0.7)
 }
 
-#relativ2{
+#relativ2 {
   position: absolute;
   background-color: rgb(55, 117, 209);
   z-index: 4;
@@ -384,19 +385,19 @@ main {
   height: 300px;
 }
 
-#relativ2 h3{
+#relativ2 h3 {
   margin-top: 50px;
   text-align: center;
   font-size: 1.5rem;
 }
 
-#relativ2 > ul > li{
+#relativ2 > ul > li {
   list-style-type: lower-greek;
   font-size: 1.2rem;
   margin-left: 20px;
 }
 
-#relativ2 > a{
+#relativ2 > a {
   margin-left: 90px;
   border-radius: 20px;
   text-decoration: none;
@@ -405,7 +406,7 @@ main {
   border: 1px solid rgb(49, 49, 49);
 }
 
-#relativ2 > a:hover{
+#relativ2 > a:hover {
   background-color: rgb(49, 49, 49);
   color: rgb(255, 255, 255);
 }
@@ -548,223 +549,225 @@ GALLERY - sekcja galerii zdjęć
 - Reguły Media Queries: Są to reguły CSS dostosowujące stylizację dla różnych szerokości ekranu. Zdefiniowane są trzy punkty przerwania: dla ekranów o szerokości od 768px do 1199px, od 1200px w górę oraz poniżej 768px. W każdym z tych punktów przerwania dostosowywane są pozycje i style elementów, aby zachować responsywność strony w zależności od rozmiaru ekranu.
 
 Markup:
- <main>
-        <div id="relativeTemplate">
-            <div id="relativ"></div>
-            <img src="img/abootUs2.webp" alt="background2" id="background2">
-            <div id="relativ2">
-                <h3>See our products</h3>
-                <ul>
-                    <li>Product kids</li>
-                    <li>Product mens</li>
-                    <li>Product womens</li>
-                </ul>
-                <a href="./contact.html" class="contactClass">Lorem ipsum!</a>
-            </div>
-        </div>
-        <h1 style="display:none;">.</h1>
-        <h2 class="gallery-heading">Gallery</h2>
-        <div class="gallery-container">
-            <section class="gallery_class" id="gallery">
-                <h2 style="display:none;">.</h2>
-                <img src="img/gallery1.webp" alt="Lorem Ipsum1" loading="lazy" width="400" height="400">
-                <img src="img/gallery2.webp" alt="Lorem Ipsum2" loading="lazy" width="400" height="400">
-                <img src="img/gallery3.webp" alt="Lorem Ipsum3" loading="lazy" width="400" height="400">
-                <img src="img/gallery4.webp" alt="Lorem Ipsum4" loading="lazy" width="400" height="400">
-                <img src="img/gallery5.webp" alt="Lorem Ipsum5" loading="lazy" width="400" height="400">
-                <img src="img/gallery6.webp" alt="Lorem Ipsum6" loading="lazy" width="400" height="400">
-                <img src="img/gallery7.webp" alt="Lorem Ipsum7" loading="lazy" width="400" height="400">
-                <img src="img/gallery8.webp" alt="Lorem Ipsum8" loading="lazy" width="400" height="400">
-                <img src="img/gallery9.webp" alt="Lorem Ipsum9" loading="lazy" width="400" height="400">
-                <img src="img/gallery10.webp" alt="Lorem Ipsum10" loading="lazy" width="400" height="400">
-                <img src="img/gallery11.webp" alt="Lorem Ipsum11" loading="lazy" width="400" height="400">
-                <img src="img/gallery12.webp" alt="Lorem Ipsum12" loading="lazy" width="400" height="400">
-            </section>
-        </div>
-  </main>
+<main>
+      <div id="relativeTemplate">
+          <div id="relativ"></div>
+          <img src="img/abootUs2.webp" alt="background2" id="background2">
+          <div id="relativ2">
+              <h3>See our products</h3>
+              <ul>
+                  <li>Product kids</li>
+                  <li>Product mens</li>
+                  <li>Product womens</li>
+              </ul>
+              <a href="./contact.html" class="contactClass">Lorem ipsum!</a>
+          </div>
+      </div>
+      <h1 style="display:none;">.</h1>
+      <h2 class="gallery-heading">Gallery</h2>
+      <div class="gallery-container">
+          <section class="gallery_class" id="gallery">
+              <h2 style="display:none;">.</h2>
+              <img src="img/gallery1.webp" alt="Lorem Ipsum1" loading="lazy" width="400" height="400">
+              <img src="img/gallery2.webp" alt="Lorem Ipsum2" loading="lazy" width="400" height="400">
+              <img src="img/gallery3.webp" alt="Lorem Ipsum3" loading="lazy" width="400" height="400">
+              <img src="img/gallery4.webp" alt="Lorem Ipsum4" loading="lazy" width="400" height="400">
+              <img src="img/gallery5.webp" alt="Lorem Ipsum5" loading="lazy" width="400" height="400">
+              <img src="img/gallery6.webp" alt="Lorem Ipsum6" loading="lazy" width="400" height="400">
+              <img src="img/gallery7.webp" alt="Lorem Ipsum7" loading="lazy" width="400" height="400">
+              <img src="img/gallery8.webp" alt="Lorem Ipsum8" loading="lazy" width="400" height="400">
+              <img src="img/gallery9.webp" alt="Lorem Ipsum9" loading="lazy" width="400" height="400">
+              <img src="img/gallery10.webp" alt="Lorem Ipsum10" loading="lazy" width="400" height="400">
+              <img src="img/gallery11.webp" alt="Lorem Ipsum11" loading="lazy" width="400" height="400">
+              <img src="img/gallery12.webp" alt="Lorem Ipsum12" loading="lazy" width="400" height="400">
+          </section>
+      </div>
+</main>
 
 Style guide: 6.0
 */
 
 @media (max-width: 1200px) and (min-width: 1000px) {
-  #relativ{
-    margin-left: 50px;
-    margin-top: 100px;
+  #relativ {
+      margin-left: 50px;
+      margin-top: 100px;
   }
 
-  #relativ2{
-    margin-left: 150px;
+  #relativ2 {
+      margin-left: 150px;
   }
 
-  #background2{
-    margin-left: 250px;
+  #background2 {
+      margin-left: 250px;
   }
 }
 
 @media (max-width: 1000px) {
-  #relativeTemplate{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    height: 50vh;
+  #relativeTemplate {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      height: 50vh;
   }
-  
-  #relativ, #background2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-  }
-  
+
+  #relativ,
   #background2 {
-    box-shadow: #000000 0px 0px 20px 0px;
-    background-color: lightgrey;
-    margin-left: 270px;
-    margin-top: 50px;
-    top: 10;
-    left: 20;
-    z-index: 2;
+      position: absolute;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
   }
-  
+
+  #background2 {
+      box-shadow: #000000 0px 0px 20px 0px;
+      background-color: lightgrey;
+      margin-left: 270px;
+      margin-top: 50px;
+      top: 10;
+      left: 20;
+      z-index: 2;
+  }
+
   #relativ {
-    box-shadow: #000000 0px 0px 20px 0px;
-    margin-top: 150px;
-    margin-left: 250px;
-    top: 10;
-    left: 20;
-    z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
+      box-shadow: #000000 0px 0px 20px 0px;
+      margin-top: 150px;
+      margin-left: 250px;
+      top: 10;
+      left: 20;
+      z-index: 1;
+      background-color: rgba(44, 40, 40, 0.7)
   }
-  
-  #relativ2{
-    position: absolute;
-    background-color: rgb(55, 117, 209);
-    z-index: 4;
-    font-weight: bold;
-    margin-left: 160px;
-    margin-top: 150px;
-    box-shadow: #000000 0px 0px 20px 0px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+
+  #relativ2 {
+      position: absolute;
+      background-color: rgb(55, 117, 209);
+      z-index: 4;
+      font-weight: bold;
+      margin-left: 160px;
+      margin-top: 150px;
+      box-shadow: #000000 0px 0px 20px 0px;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
   }
-  
-  #relativ2 h3{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 1.5rem;
+
+  #relativ2 h3 {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1.5rem;
   }
-  
-  #relativ2 > ul > li{
-    list-style-type: lower-greek;
-    font-size: 1.2rem;
-    margin-left: 20px;
+
+  #relativ2 > ul > li {
+      list-style-type: lower-greek;
+      font-size: 1.2rem;
+      margin-left: 20px;
   }
-  
-  #relativ2 > a{
-    margin-left: 90px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 10px;
-    border: 1px solid rgb(49, 49, 49);
+
+  #relativ2 > a {
+      margin-left: 90px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      padding: 10px 10px;
+      border: 1px solid rgb(49, 49, 49);
   }
-  
-  #relativ2 > a:hover{
-    background-color: rgb(49, 49, 49);
-    color: rgb(255, 255, 255);
+
+  #relativ2 > a:hover {
+      background-color: rgb(49, 49, 49);
+      color: rgb(255, 255, 255);
   }
 }
 
 @media (max-width: 768px) {
 
-  #relativeTemplate{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-top:-100px;
-    height: 50vh;
+  #relativeTemplate {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-top: -100px;
+      height: 50vh;
   }
-  
-  #relativ, #background2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-  }
-  
+
+  #relativ,
   #background2 {
-    box-shadow: #000000 0px 0px 20px 0px;
-    background-color: lightgrey;
-    margin-left: 80px;
-    margin-top: 50px;
-    top: 10;
-    left: 20;
-    z-index: 2;
+      position: absolute;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
   }
-  
+
+  #background2 {
+      box-shadow: #000000 0px 0px 20px 0px;
+      background-color: lightgrey;
+      margin-left: 80px;
+      margin-top: 50px;
+      top: 10;
+      left: 20;
+      z-index: 2;
+  }
+
   #relativ {
-    box-shadow: #000000 0px 0px 20px 0px;
-    margin-top: 150px;
-    margin-left: 80px;
-    top: 10;
-    left: 0px;
-    z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
-  }
-  
-  #relativ2{
-    position: absolute;
-    background-color: rgb(55, 117, 209);
-    z-index: 4;
-    font-weight: bold;
-    margin-left: -75px;
-    margin-top: 150px;
-    box-shadow: #000000 0px 0px 20px 0px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-  }
-  
-  #relativ2 h3{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  
-  #relativ2 > ul > li{
-    list-style-type: lower-greek;
-    font-size: 1.2rem;
-    margin-left: 20px;
-  }
-  
-  #relativ2 > a{
-    margin-left: 90px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 10px;
-    border: 1px solid rgb(49, 49, 49);
-  }
-  
-  #relativ2 > a:hover{
-    background-color: rgb(49, 49, 49);
-    color: rgb(255, 255, 255);
+      box-shadow: #000000 0px 0px 20px 0px;
+      margin-top: 150px;
+      margin-left: 80px;
+      top: 10;
+      left: 0px;
+      z-index: 1;
+      background-color: rgba(44, 40, 40, 0.7)
   }
 
-  .navbar{
-    padding: 0;
-    align-items: normal;
-    background-color: transparent;
-    display: flex;
+  #relativ2 {
+      position: absolute;
+      background-color: rgb(55, 117, 209);
+      z-index: 4;
+      font-weight: bold;
+      margin-left: -75px;
+      margin-top: 150px;
+      box-shadow: #000000 0px 0px 20px 0px;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
   }
 
-  nav{
-    padding-top: 22px;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--eighth-color);
+  #relativ2 h3 {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+  }
+
+  #relativ2 > ul > li {
+      list-style-type: lower-greek;
+      font-size: 1.2rem;
+      margin-left: 20px;
+  }
+
+  #relativ2 > a {
+      margin-left: 90px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      padding: 10px 10px;
+      border: 1px solid rgb(49, 49, 49);
+  }
+
+  #relativ2 > a:hover {
+      background-color: rgb(49, 49, 49);
+      color: rgb(255, 255, 255);
+  }
+
+  .navbar {
+      padding: 0;
+      align-items: normal;
+      background-color: transparent;
+      display: flex;
+  }
+
+  nav {
+      padding-top: 22px;
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      background-color: var(--eighth-color);
   }
 
   #hamburger {
@@ -834,16 +837,16 @@ Style guide: 6.0
   }
 
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: flex-end;
-    justify-content: flex-start;
-    text-align: center;
-}
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: flex-end;
+      justify-content: flex-start;
+      text-align: center;
+  }
 
 
   .logo img {
@@ -873,12 +876,13 @@ Style guide: 6.0
       justify-content: center;
       flex-wrap: wrap;
   }
+
   nav {
-    padding-top: 22px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--eighth-color);
-}
+      padding-top: 22px;
+      display: flex;
+      justify-content: center;
+      background-color: var(--eighth-color);
+  }
 
 
   nav ul {
@@ -971,76 +975,77 @@ Style guide: 6.0
 }
 
 @media(max-width: 465px) {
-  #relativeTemplate{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    height: 40vh;
+  #relativeTemplate {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      height: 40vh;
   }
-  
-  #relativ, #background2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  
+
+  #relativ,
   #background2 {
-    box-shadow: #000000 0px 0px 20px 0px;
-    background-color: lightgrey;
-    margin-left: 70px;
-    margin-top: 50px;
-    top: 10;
-    left: 20;
-    z-index: 2;
+      position: absolute;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
   }
-  
+
+  #background2 {
+      box-shadow: #000000 0px 0px 20px 0px;
+      background-color: lightgrey;
+      margin-left: 70px;
+      margin-top: 50px;
+      top: 10;
+      left: 20;
+      z-index: 2;
+  }
+
   #relativ {
-    box-shadow: #000000 0px 0px 20px 0px;
-    margin-top: 150px;
-    margin-left: 0px;
-    top: 10;
-    left: 20;
-    z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
+      box-shadow: #000000 0px 0px 20px 0px;
+      margin-top: 150px;
+      margin-left: 0px;
+      top: 10;
+      left: 20;
+      z-index: 1;
+      background-color: rgba(44, 40, 40, 0.7)
   }
-  
-  #relativ2{
-    position: absolute;
-    background-color: rgb(55, 117, 209);
-    z-index: 4;
-    font-weight: bold;
-    margin-left: 70px;
-    margin-top: 150px;
-    box-shadow: #000000 0px 0px 20px 0px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+
+  #relativ2 {
+      position: absolute;
+      background-color: rgb(55, 117, 209);
+      z-index: 4;
+      font-weight: bold;
+      margin-left: 70px;
+      margin-top: 150px;
+      box-shadow: #000000 0px 0px 20px 0px;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
   }
-  
-  #relativ2 h3{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1rem;
+
+  #relativ2 h3 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1rem;
   }
-  
-  #relativ2 > ul > li{
-    list-style-type: lower-greek;
-    font-size: 0.8rem;
-    margin-left: 20px;
+
+  #relativ2 > ul > li {
+      list-style-type: lower-greek;
+      font-size: 0.8rem;
+      margin-left: 20px;
   }
-  
-  #relativ2 > a{
-    margin-left: 40px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 10px;
-    border: 1px solid rgb(49, 49, 49);
+
+  #relativ2 > a {
+      margin-left: 40px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      padding: 10px 10px;
+      border: 1px solid rgb(49, 49, 49);
   }
-  
-  #relativ2 > a:hover{
-    background-color: rgb(49, 49, 49);
-    color: rgb(255, 255, 255);
+
+  #relativ2 > a:hover {
+      background-color: rgb(49, 49, 49);
+      color: rgb(255, 255, 255);
   }
 }
