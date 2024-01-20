@@ -16,6 +16,7 @@
 6. [Linki do źródeł](#6-linki-do-źródeł)
 7. [Raport SEO](#7-raport-seo)
 
+<hr>
  
 # 1. Strona tytułowa
 
@@ -33,6 +34,8 @@ Projekt obejmuje zestaw stron internetowych składających się z różnorodnych
 Dokumentacja została stworzona w celu zapewnienia szczegółowego przeglądu każdego z aspektów projektu, włącznie z jego strukturą, używanymi technologiami, oraz metodami implementacji. Ma ona na celu ułatwić zrozumienie projektu przez osoby trzecie, zapewnić wsparcie w dalszym rozwoju, oraz służyć jako dokumentacja techniczna dla użytkowników końcowych.
 
  <br>![projekt](img/description/photo2.png)
+
+<hr>
 
 # 2. Zdefiniowanie problemu do realizacji
 
@@ -81,6 +84,8 @@ Celem projektu jest dostarczenie studentom i innym użytkownikom gotowego, łatw
 
 Tak zdefiniowany problem do realizacji wraz z zaproponowanymi rozwiązaniami zapewnia solidne fundamenty dla projektu szablonu strony internetowej, który ma służyć edukacyjnym i praktycznym celom dla szerokiej grupy użytkowników.
 
+<hr>
+
 # 3. Propozycja rozwiązania problemu
 
 Opierając się na analizie dostarczonych kodów HTML/CSS, takich jak home.html, faq.html, productFirst.html i innych, oto zaproponowane metody rozwiązania problemu tworzenia uniwersalnego i efektywnego szablonu strony internetowej na potrzeby projektu studenckiego.
@@ -126,6 +131,8 @@ Opierając się na analizie dostarczonych kodów HTML/CSS, takich jak home.html,
 ## Podsumowanie:
 
 Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na potrzeby projektu studenckiego wymaga zastosowania czystego, modularnego kodu, responsywnych technik projektowania oraz dodania elementów interaktywnych, które zwiększają zaangażowanie użytkowników. Przyjęte podejście ma na celu zapewnienie, że szablon będzie łatwy do adaptacji i rozwoju, niezależnie od specyficznych potrzeb projektu, na który zostanie wykorzystany.
+
+<hr>
 
 # 4. Testowanie responsywności i walidacja
 
@@ -336,6 +343,8 @@ Zgodnie z dokumentacją, strona została poddana rygorystycznym testom funkcjona
 
 - Podobnie jak CSS, HTML strony również przeszedł walidację bez błędów. To świadczy o wysokiej jakości kodu, jego zgodności ze standardami oraz o tym, że prawdopodobnie będzie dobrze interpretowany przez różnorodne przeglądarki i urządzenia.
 
+<hr>
+
 # 5. Komentarze kodu i dokumentacja KSS
 
 Kod jest komentowany w ten sposób, aby dostarczyć jasnych i czytelnych informacji na temat każdej sekcji kodu. Komentarze są używane, aby opisać, do czego służy każdy blok kodu oraz jakie są jego główne cele i funkcje. To pomaga programistom zrozumieć strukturę i działanie kodu oraz ułatwia utrzymanie i ewentualne modyfikacje w przyszłości.
@@ -363,6 +372,8 @@ Przykładowe zdjęcia przedstawiające dokumentację KSS (Knyle Style Sheets):
 
 Całość dokumentacji dostępna również pod linkiem [tutaj](https://projekt1.dawidolko.pl/kss/styleguide/).
 
+<hr>
+
 # 6. Linki do źródeł
 
 Co do ikon użytych w nawigacji, zostały one pozyskane z serwisu [Flaticon](https://www.flaticon.com/). 
@@ -378,6 +389,8 @@ Dodatkowo jest załączona na Github-Pages, więc możliwa jest indywidualna oce
 Historia commit'ów:
  
 ![Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main)
+
+<hr>
 
 # 7. Raport SEO
 
