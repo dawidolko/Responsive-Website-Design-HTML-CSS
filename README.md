@@ -317,19 +317,39 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
  
 ## Testy strony w formacie „Desktop”:
 
+
+ <br>![projekt](img/description/photo28.png)
+
 Strona główna wygląda w wersji desktopowej dobrze, nie ma nigdzie zagięć, wystających krawędzi. Pasek nawigacyjny wygląda przejrzyście, jest opisany i dodatkowo działa na wyobraźnię poprzez ikony.
+
+<br>![projekt](img/description/photo29.png)
 
 Sekcja galerii i detali jest w wersji desktopowej w miarę przejrzysta, widać równe odstępy od krawędzi i równe odstępy między zdjęciami. Wszystko wygląda czytelnie i nie sprawia kłopotów z odczytaniem.
 
+<br>![projekt](img/description/photo30.png)
+
 Slider oraz sekcje produktów mają równe wcięcia i dobre ułożenie, są w pełni czytelne i spełniają wymogi, dotyczące założeń.
+
+<br>![projekt](img/description/photo31.png)
+<br>![projekt](img/description/photo32.png)
 
 Elementy są dopasowane w taki sposób, aby nie raziły w oczy i nakłaniały do kliknięcia w dany produkt. Z pewnością ich ilość nie przytłacza i działa w sposób naturalny na wyobraźnię.
 
+<br>![projekt](img/description/photo33.png)
+<br>![projekt](img/description/photo34.png)
+
 Strona zakańcza się na sekcji stopki która w sposób minimalistyczny nie psuje całości wykonania strony i w pełni dopasowuje się do wybranych urządzeń.
+
+<br>![projekt](img/description/photo35.png)
 
 Podstrony też mają poprawne ułożenie i są czytelne dla oka, realizując wizję kompleksowej firmy.
 
+<br>![projekt](img/description/photo36.png)
+
 Formularze kontaktowe i płatnicze są ułożone centralnie na środku ekranu co w pewności jest przyjemne dla oka i odpowiednie dla użytkownika.
+
+<br>![projekt](img/description/photo37.png)
+<br>![projekt](img/description/photo38.png)
 
 Produkty i ich opisy są dopasowane do siebie co pokazuje, iż pasują do siebie i nie psują wizji łączenia całości.
 
