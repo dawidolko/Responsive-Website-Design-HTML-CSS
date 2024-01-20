@@ -1,0 +1,833 @@
+/* Root variables
+Definicje globalnych zmiennych CSS, które określają kolorystykę strony, w tym kolory tła, tekstów i akcentów.
+*/
+
+/* Body Styles
+Podstawowe style dla całego dokumentu, ustawiające m.in. kolor tła, rodzinę czcionek, wyrównanie elementów i układ flex.
+*/
+
+/* Header Styles
+Style dla nagłówka strony, określające jego pozycjonowanie, rozmiar i wyrównanie.
+*/
+
+/* Loading Bars
+Style dla animowanych pasków ładowania na górze i dole strony, z określeniem pozycji, rozmiaru i gradientu kolorów.
+*/
+
+/* Blur Background
+Style dla rozmytego tła, zdefiniowanie pozycji, rozmiaru, obrazu tła i filtru rozmycia.
+*/
+
+/* Header Text
+Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i efekt przejścia.
+*/
+
+/* Call to Action Button
+Style dla przycisku zachęcającego do działania w nagłówku, określające jego wygląd i interakcje.
+*/
+
+/* Navigation Bar
+Style dla paska nawigacji, w tym jego pozycjonowanie, układ, kolor tła i style dla logo oraz elementów nawigacyjnych.
+*/
+
+/* Footer Styles
+Style dla stopki, określające tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
+*/
+
+/* Media Queries for medium screens
+Zestaw reguł dla responsywności strony na średnich ekranach, w tym zmiany w stylach nawigacji i nagłówka.
+*/
+
+/* Media Queries for small screens
+Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w stylach nawigacji, nagłówka i pozycjonowania elementów.
+*/
+
+:root {
+    --bg-color: #d1c6c6;
+    --bg2-color: #6693af;
+    --blue: #0033a0;
+    --black-color: #000;
+    --white-color: #fefefe;
+    --gray-color: gray;
+    --red-color: #f55;
+    --red2-color: #f40;
+    --first-color: #193242;
+    --second-color: #375465;
+    --third-color: #183141;
+    --fourth-color: #1a3344;
+    --fifth-color: #385566;
+    --sixth-color: #355264;
+    --seventh-color: #1d384a;
+    --eighth-color: #1e394b;
+    --ninth-color: #395667;
+    --ten-color: #203a4d;
+}
+
+
+body {
+    background-color: var(--bg2-color);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading-top, .loading-bottom {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 4px; 
+    background: linear-gradient(to right, rgb(16, 48, 78), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
+    z-index: 1000;
+  }
+  
+.loading-top {
+    top: 0;
+    z-index: 1001;
+}
+  
+.loading-bottom {
+    bottom: 0;
+    z-index: 1000;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.header__text {
+    font-size: 2.5rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header__text:hover {
+    transform: scale(0.8);
+}
+
+.header__text--colorized {
+    color: var(--red-color);
+    font-weight: bold;
+}
+
+.header__cta {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    background-color: var(--red-color);
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.header__cta:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: var(--red2-color);
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--seventh-color);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    border-radius: 50px;
+    width: 90px;
+}
+
+.logo {
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(0.8);
+}
+
+nav {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-top: 0.5px solid var(--white-color);
+    border-bottom: 0.5px solid var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eighth-color);
+    padding: 10px 0;
+}
+
+
+nav ul {
+    line-height: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 12px;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+nav ul li a.active {
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
+}
+
+.nav:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li img {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.nav__item {
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+}
+
+#hamburger {
+    display: none;
+}
+
+input#toggle {
+    display: none;
+}
+
+main {
+    flex: 1;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+.buttoner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: var(--white-color);
+    background-color: gray;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.02);
+    color: var(--black-color);
+}
+
+.offer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.offer__text {
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.offer__text:hover {
+    transform: scale(1.2);
+}
+
+.offer__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.offer__item {
+    flex: 0 0 calc(43.33% - 2rem);
+    margin: 1rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.offer__item:hover {
+    transform: translateY(-5px);
+}
+
+.offer__icon {
+    font-size: 3rem;
+    color: var(--red-color);
+    margin-bottom: 1rem;
+}
+
+.offer__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+}
+
+.offer__description {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+}
+
+
+.about-us__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.about-us__img {
+    width: 50%;
+    max-width: 380px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.about-us__img:hover {
+    transform: scale(0.8);
+}
+
+/*
+SERVICES - sekcja z usługami
+
+### Sekcja "Stylizacja sekcji z ofertami usług"
+
+1. **main**: Element `<main>` posiada właściwość `flex: 1`, co sugeruje, że dostosowuje się do dostępnej przestrzeni flexbox na stronie. Marginesy na górze i na dole są ustawione.
+
+2. **.buttoner**: Klasa "buttoner" jest używana do stylizowania przycisków w sekcji. Przyciski są wyśrodkowane zarówno w poziomie, jak i w pionie (`display: flex; justify-content: center; align-items: center;`). Mają białą czcionkę na szarym tle, padding (odstęp) oraz zaokrąglone rogi. Przy najechaniu kursorem przyciski stają się nieco większe i zmieniają kolor na czarny.
+
+3. **a**: Ogólna reguła stylizacji dla linków, usuwa podkreślenie i nadaje im kolor biały oraz zaokrąglone rogi.
+
+4. **a:hover**: Przy hoverze nad linkami, są one nieco powiększane i zmieniają kolor na czarny.
+
+5. **.offer__container**: Element zawierający treść sekcji "Oferta". Ma ograniczenie szerokości (max-width), odstęp wewnątrz i jest wyśrodkowany na stronie.
+
+6. **.offer__text**: Tytuł sekcji "Oferta" ma dużą czcionkę o kolorze określonym zmienną `var(--first-color)`. Przy hoverze tekst jest nieco powiększany.
+
+7. **.offer__box**: Kontener dla poszczególnych ofert, elementy są wyśrodkowane i rozmieszczone równomiernie wzdłuż poziomej osi.
+
+8. **.offer__item**: Każdy element oferty ma określone proporcje flexbox, tło w kolorze białym, zaokrąglone rogi, cień i efekt transformacji przy hoverze.
+
+9. **.offer__icon**: Ikony ofert mają rozmiar 3 rem i kolor określony zmienną `var(--red-color)`.
+
+10. **.offer__title**: Tytuły ofert mają większą czcionkę, są pogrubione i mają kolor określony zmienną `var(--gray-color)`.
+
+11. **.offer__description**: Opisy ofert mają mniejszą czcionkę i kolor określony zmienną `var(--gray-color)`.
+
+12. **.about-us__box**: Kontener dla sekcji z obrazkami. Elementy są rozmieszczone równomiernie wzdłuż poziomej osi, a obrazki zmniejszają się i wyglądają inaczej przy hoverze.
+
+13. W kodzie CSS znajdują się również media queries, które dostosowują stylizację dla różnych szerokości ekranu, co sprawia, że strona jest responsywna.
+
+Ogólnie rzecz biorąc, ten kod definiuje stylizację sekcji z ofertami usług na stronie internetowej, uwzględniając różne elementy, takie jak przyciski, obrazki, ikony i tekst. Stylizacja jest zgodna ze style guide o nazwie "5.0".
+
+Markup:
+<main>
+        <section class="section offer" id="services">
+            <h1 style="display:none;">.</h1>
+            <div class="offer__container">
+                <h2 class="section__heading offer__text">Oferta</h2>
+                <div class="offer__box">
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-dumbbell"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                        <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-running"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                        <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                </div>
+                <div class="about-us__box">
+                    <img src="img/product20.webp" alt="Lorem ipsum" class="about-us__img about-us__img--desktop"  width="200" height="200">
+                    <img src="img/product11.webp" alt="Lorem ipsum" class="about-us__img"  width="200" height="200">
+                    <img src="img/product12.webp" alt="Lorem ipsum" class="about-us__img"  width="200" height="200">
+                </div>
+                <div class="offer__box">
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-drumstick-bite"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                       <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-medkit"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                        <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                </div>
+                <div class="about-us__box">
+                    <img src="img/product4.webp" alt="Lorem ipsum" class="about-us__img about-us__img--desktop"  width="200" height="200">
+                    <img src="img/product14.webp" alt="Lorem ipsum" class="about-us__img"  width="200" height="200">
+                    <img src="img/product16.webp" alt="Lorem ipsum" class="about-us__img"  width="200" height="200">
+                </div>
+                <div class="offer__box">
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-swimmer"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                        <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                    <div class="offer__item">
+                        <i class="offer__icon fas fa-child"></i>
+                        <h3 class="offer__title">Lorem ipsum</h3>
+                        <p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a est.
+                            Integer pulvinar dui elit, vitae vehicula est tempor venenatis.</p>
+                        <a class="buttoner" href="./ourProducts.html">VIEV MORE</a>
+                    </div>
+                </div>
+                <div class="about-us__box">
+                    <img src="img/product1.webp" alt="Lorem ipsum" class="about-us__img about-us__img--desktop"  width="200" height="200">
+                    <img src="img/product6.webp" alt="Lorem ipsum" class="about-us__img"  width="200" height="200">
+                    <img src="img/mainPage9.webp" alt="Lorem ipsum" class="about-us__img" width="200" height="200">
+                </div>
+            </div>
+        </section>
+</main>
+
+Style guide: 3.0
+*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding-top: 1rem;
+    background-color: var(--fifth-color);
+    color: var(--white-color);
+    text-align: center;
+    width: 100%;
+}
+
+.footer__text {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.footer__link {
+    color: var(--red-color);
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+
+.footer__link:hover {
+    transform: scale(1.2);
+    color: var(--red2-color);
+}
+
+.footer__link:visited {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 950px) {
+    .about-us__img {
+        width: 85%;
+        max-width: 400px;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .offer__item {
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .about-us__img {
+        width: 85%;
+        max-width: 400px;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+
+    #hamburger {
+        display: flex;
+        color: var(--white-color);
+        text-decoration: none;
+        transition: transform 0.2s;
+        padding: 0px 10px;
+        font-size: 1.5rem;
+    }
+
+    #toggle {
+        display: none;
+        border: 0px;
+    }
+
+    nav{
+        padding-top: 22px;
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        background-color: var(--eighth-color);
+      }
+
+      nav{
+        padding-top: 22px;
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        background-color: var(--eighth-color);
+      }
+
+      .navbar{
+        padding: 0;
+        align-items: normal;
+        background-color: transparent;
+        display: flex;
+      }
+
+
+      .navbar{
+        padding: 0;
+        align-items: normal;
+        background-color: transparent;
+        display: flex;
+      }
+
+    #toggle:checked ~ .navbar-links {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .header {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .about-us__img {
+        width: 85%;
+        max-width: 400px;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .offer__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .about-us__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    #hamburger {
+        display: flex;
+        color: var(--white-color);
+        text-decoration: none;
+        transition: transform 0.2s;
+        padding: 0px 10px;
+        font-size: 1.5rem;
+    }
+
+    #toggle {
+        display: none;
+        border: 0px;
+    }
+
+    #toggle:checked ~ .navbar-links {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: flex-end;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .logo img {
+        border-radius: 50px;
+        width: 80px;
+        margin-top: 0px;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 10px;
+        transition: transform 0.2s;
+    }
+
+    .logo:hover {
+        transform: scale(0.8);
+    }
+
+    .header {
+        margin-top: 60px;
+    }
+
+
+    .navbar {
+        justify-content: center;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        padding-top: 22px;
+        display: flex;
+        justify-content: center;
+        background-color: var(--eighth-color);
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--white-color);
+        transition: color 0.3s, border-bottom-color 0.3s;
+        border-bottom: 2px solid transparent;
+        position: relative;
+    }
+
+    nav ul li a:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--white-color);
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        color: var(--white-color);
+        border-bottom-color: var(--white-color);
+    }
+
+    nav ul li a:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    nav ul li a.active {
+        color: var(--white-color);
+        border-bottom-color: var(--white-color);
+    }
+
+    .nav {
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .nav:hover {
+        transform: translateY(-3px);
+    }
+
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 10%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-us__img {
+        width: 85%;
+        max-width: 400px;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .offer__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .about-us__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+}

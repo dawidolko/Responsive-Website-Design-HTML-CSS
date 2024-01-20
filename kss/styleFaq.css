@@ -1,0 +1,772 @@
+
+/* Root variables
+Definicje globalnych zmiennych CSS, które określają kolorystykę strony, w tym kolory tła, tekstów i akcentów.
+*/
+
+/* Body Styles
+Podstawowe style dla całego dokumentu, ustawiające m.in. kolor tła, rodzinę czcionek, wyrównanie elementów i układ flex.
+*/
+
+/* Header Styles
+Style dla nagłówka strony, określające jego pozycjonowanie, rozmiar i wyrównanie.
+*/
+
+/* Loading Bars
+Style dla animowanych pasków ładowania na górze i dole strony, z określeniem pozycji, rozmiaru i gradientu kolorów.
+*/
+
+/* Blur Background
+Style dla rozmytego tła, zdefiniowanie pozycji, rozmiaru, obrazu tła i filtru rozmycia.
+*/
+
+/* Header Text
+Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i efekt przejścia.
+*/
+
+/* Call to Action Button
+Style dla przycisku zachęcającego do działania w nagłówku, określające jego wygląd i interakcje.
+*/
+
+/* Navigation Bar
+Style dla paska nawigacji, w tym jego pozycjonowanie, układ, kolor tła i style dla logo oraz elementów nawigacyjnych.
+*/
+
+/* FAQ Section
+Style dla sekcji FAQ, w tym stylowanie dla kategorii pytań, pytań i odpowiedzi oraz interakcje z details i summary.
+*/
+
+/* Footer Styles
+Style dla stopki, określające tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
+*/
+
+/* Media Queries for medium screens
+Zestaw reguł dla responsywności strony na średnich ekranach, w tym zmiany w stylach nawigacji i nagłówka.
+*/
+
+/* Media Queries for small screens
+Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w stylach nawigacji, nagłówka i pozycjonowania elementów.
+*/
+
+:root {
+  --bg-color: #d1c6c6;
+  --bg2-color: #6693af;
+  --blue: #0033a0;
+  --black-color: #000;
+  --white-color: #fefefe;
+  --gray-color: gray;
+  --red-color: #f55;
+  --red2-color: #f40;
+  --first-color: #193242;
+  --second-color: #375465;
+  --third-color: #183141;
+  --fourth-color: #1a3344;
+  --fifth-color: #385566;
+  --sixth-color: #355264;
+  --seventh-color: #1d384a;
+  --eighth-color: #1e394b;
+  --ninth-color: #395667;
+  --ten-color: #203a4d;
+}
+
+
+body {
+  background-color: var(--bg2-color);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.loading-top, .loading-bottom {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 4px; 
+  background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
+  z-index: 1000;
+}
+
+.loading-top {
+  top: 0;
+  z-index: 1001;
+}
+
+.loading-bottom {
+  bottom: 0;
+  z-index: 1000;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.header__text {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header__text:hover {
+  transform: scale(0.8);
+}
+
+.header__text--colorized {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.header__cta {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  background-color: var(--red-color);
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.header__cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: var(--red2-color);
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--seventh-color);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo img {
+  border-radius: 50px;
+  width: 90px;
+}
+
+.logo {
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(0.8);
+}
+
+nav {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  border-top: 0.5px solid var(--white-color);
+  border-bottom: 0.5px solid var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--eighth-color);
+  padding: 10px 0;
+}
+
+
+nav ul {
+  line-height: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 12px;
+  margin-bottom: 15px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: color 0.3s, border-bottom-color 0.3s;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-color);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+.nav:hover {
+  transform: translateY(-3px);
+}
+
+nav ul li img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.nav__item {
+  transition: transform 0.3s ease;
+  margin-right: 15px;
+}
+
+#hamburger {
+  display: none;
+}
+
+input#toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+
+  #hamburger {
+      display: flex;
+      color: var(--white-color);
+      text-decoration: none;
+      transition: transform 0.2s;
+      padding: 0px 10px;
+      font-size: 1.5rem;
+  }
+
+  #toggle {
+      display: none;
+      border: 0px;
+  }
+
+  nav{
+    padding-top: 22px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--eighth-color);
+  }
+
+  
+  .navbar{
+    padding: 0;
+    align-items: normal;
+    background-color: transparent;
+    display: flex;
+  }
+
+
+  #toggle:checked ~ .navbar-links {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      justify-content: space-evenly;
+      padding: 0px;
+  }
+
+  .navbar-links {
+      display: none;
+  }
+
+
+  .nav ul li {
+      display: block;
+      margin: 0.5rem 0;
+  }
+
+  .header {
+      margin-top: 60px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  #hamburger {
+      display: flex;
+      color: var(--white-color);
+      text-decoration: none;
+      transition: transform 0.2s;
+      padding: 0px 10px;
+      font-size: 1.5rem;
+  }
+
+  #toggle {
+      display: none;
+      border: 0px;
+  }
+
+  #toggle:checked ~ .navbar-links {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      justify-content: space-evenly;
+      padding: 0px;
+  }
+
+  .navbar-links {
+      display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+  .logo img {
+      border-radius: 50px;
+      width: 80px;
+      margin-top: 0px;
+  }
+
+  .logo {
+      position: relative;
+      left: 0;
+      transform: none;
+      margin-bottom: 10px;
+      transition: transform 0.2s;
+  }
+
+  .logo:hover {
+      transform: scale(0.8);
+  }
+
+  .header {
+      margin-top: 60px;
+  }
+
+
+  .navbar {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  nav {
+    padding-top: 22px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--eighth-color);
+}
+
+  nav ul li a {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white-color);
+      transition: color 0.3s, border-bottom-color 0.3s;
+      border-bottom: 2px solid transparent;
+      position: relative;
+  }
+
+  nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--white-color);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+      color: var(--white-color);
+      border-bottom-color: var(--white-color);
+  }
+
+  nav ul li a.active {
+      color: var(--white-color);
+      border-bottom-color: var(--white-color);
+  }
+
+  .nav {
+      position: relative;
+      transition: transform 0.3s ease;
+  }
+
+  .nav:hover {
+      transform: translateY(-3px);
+  }
+
+  .logo {
+      position: absolute;
+      top: 5px;
+      left: 10%;
+      transform: translateX(-50%);
+  }
+
+  .logo img {
+      margin-left: 20px;
+  }
+}
+
+/*
+NAVBAR - sekcja paska nawigacji
+
+### Sekcja "Nagłówek strony"
+
+1. **.header**: Kontener nagłówka strony, który posiada margines na górze wynoszący 60 pikseli i zajmuje całą dostępną wysokość widoku (height: 100vh). Elementy wewnątrz nagłówka są wyśrodkowane zarówno w pionie, jak i w poziomie, przy użyciu właściwości `display: flex;`, `align-items: center;` i `justify-content: center;`. Tekst w nagłówku jest również wyśrodkowany poziomo za pomocą `text-align: center;`.
+
+2. **.loading-top, .loading-bottom**: Dwa paski animacji ładowania, z których każdy ma stałą pozycję (position: fixed) na górze i na dole strony, zajmuje całą dostępną szerokość (width: 100vw) oraz ma wysokość 4 piksele. Tło pasków jest gradientem liniowym z różnymi kolorami. Odpowiednie z-indexy (z-index: 1000, z-index: 1001) kontrolują ich położenie na stronie.
+
+### Sekcja "Struktura HTML"
+
+3. **HTML Markup**: Kod HTML zawiera elementy nagłówka strony, w tym paski animacji ładowania (loading-top i loading-bottom). Ponadto, znajduje się logo, nawigacja w formie paska menu (hamburger menu) oraz lista linków nawigacyjnych.
+
+4. **Stylizacja nawigacji**: Linki nawigacyjne są zgrupowane w znacznikach `<ul>` i `<li>`. Każdy link zawiera obrazek z tekstem, przy użyciu znacznika `<ruby>` do umieszczenia tekstu nad obrazkiem. Wprowadzono również efekt lazy loading (loading="lazy") dla obrazków. Dodatkowo, na prawym górnym rogu paska nawigacji znajduje się ikona koszyka (Cart).
+
+5. **Styl hamburger menu**: Pasek nawigacyjny posiada opcję rozwijania (hamburger menu). Kliknięcie ikony "☰" (label) wywołuje zdarzenie zmiany stanu (input type="checkbox"), co powoduje rozwinięcie lub schowanie listy nawigacyjnej.
+
+Markup:
+<header>
+        <div class="navbar">
+            <a href="./index.html" class="logo"><img src="img/logo1transparent.webp" alt="Logo" loading="lazy" width="80" height="80"></a>
+            <menu>
+                <label id="hamburger" for="toggle">☰</label><input type="checkbox" id="toggle">
+                <ul class="navbar-links">
+                    <li>
+                        <a href="./index.html" class="nav__item"><ruby><img src="img/home-alt.svg" alt="home" loading="lazy" width="25" height="25">
+                                <rt>HOME</rt>
+                            </ruby></a>
+                    </li>
+                    <li>
+                        <a href="./aboutUs.html" class="nav__item"><ruby><img src="img/collage.svg" alt="collage" loading="lazy" width="25" height="25">
+                                <rt>ABOUT US</rt>
+                            </ruby></a>
+                    </li>
+                    <li>
+                        <a href="./services.html" class="nav__item"><ruby><img src="img/ereader.svg" alt="ereader" loading="lazy" width="25" height="25">
+                                <rt>SERVICES</rt>
+                            </ruby></a>
+                    </li>
+                    <li>
+                        <a href="./ourProducts.html" class="nav__item"><ruby><img src="img/calendar-next.svg" alt="calendar" loading="lazy" width="25" height="25">
+                                <rt>PRODUCTS</rt>
+                            </ruby></a>
+                    </li>
+                    <li>
+                        <a href="./gallery.html" class="nav__item"><ruby><img src="img/color-bucket.svg" alt="color-bucket" loading="lazy" width="25" height="25">
+                                <rt>GALLERY</rt>
+                            </ruby></a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav__item"><ruby><img src="img/phone.svg" alt="phone" loading="lazy" width="25" height="25">
+                                <rt>CONTACT</rt>
+                            </ruby>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./faq.html" class="nav__item"><ruby><img src="img/comment.svg" alt="comment" loading="lazy" width="25" height="25">
+                                <rt>FAQ</rt>
+                            </ruby></a>
+                    </li>
+                </ul>
+                <ul style="margin-right: 10px;">
+                    <li>
+                        <a href="./pay.html"><ruby><img id="koszyk" src="img/shopping-cart.svg" alt="cart" loading="lazy" width="25" height="25">
+                                <rt>CART</rt>
+                            </ruby></a>
+                    </li>
+                </ul>
+            </menu>
+        </div>
+</header>
+
+Style guide: 11.0
+*/
+
+
+main {
+  flex: 1;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+#faq-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-category h2 {
+  margin-top: 30px;
+}
+
+.faq-item {
+  background: var(--white-color);
+  margin-bottom: 10px;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+}
+
+.faq-question {
+  padding: 15px;
+  background: var(--fifth-color);
+  color: white;
+  cursor: pointer;
+}
+
+.faq-question::marker {
+  color: #fff;
+}
+
+.faq-answer {
+  padding: 15px;
+  margin: 0;
+}
+
+details[open] .faq-question {
+  border-bottom: 1px solid #ddd;
+}
+
+details:not([open]) .faq-answer {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/*
+FAQ - sekcja z pytaniami i odpowiedziami
+
+### Sekcja "FAQ - Często Zadawane Pytania"
+
+1. **main**: Główny kontener sekcji FAQ, elastyczny wewnątrz głównego kontenera strony (`flex: 1`). Umieszczony jest nieco wyżej na stronie (160 pikseli od góry) i ma margines na dole wynoszący 100 pikseli.
+
+2. **#faq-section**: Główny kontener sekcji FAQ oznaczony identyfikatorem. Ma wewnętrzne odstępy 20 pikseli i używa czcionki Arial lub sans-serif.
+
+3. **.faq-category h2**: Styl dla nagłówków kategorii pytań w sekcji FAQ. Nagłówki te mają margines na górze wynoszący 30 pikseli, co oddziela je od innych elementów.
+
+4. **.faq-item**: Styl dla pojedynczych pozycji FAQ. Mają białe tło, niewielki margines na dole, subtelne obramowanie o grubości 1 piksela i zaokrąglone rogi.
+
+5. **.faq-question**: Styl dla pytań w sekcji FAQ. Pytania mają tło o kolorze, białą czcionkę, zmieniony kursor na wskaźnik ręki (do wskazywania) oraz ikonę przed pytaniem w kolorze białym.
+
+6. **.faq-answer**: Styl dla odpowiedzi na pytania. Mają odstęp wewnętrzny wynoszący 15 pikseli i brak marginesów.
+
+7. **details[open] .faq-question**: Ten selektor dotyczy pytań, które są rozwinięte (czyli otwarte). W takim przypadku pytania otrzymują dolne obramowanie o grubości 1 piksela w szarym kolorze.
+
+8. **details:not([open]) .faq-answer**: Ten selektor dotyczy odpowiedzi na pytania, które są złożone (czyli zamknięte). W takim przypadku odpowiedzi są ukrywane.
+
+9. **details > summary**: Ten selektor dotyczy elementów `<summary>` w kontenerach `<details>`. Usunięto domyślny marker przed tekstem summary.
+
+10. **details > summary::-webkit-details-marker**: Ten selektor ukrywa domyślny marker w przeglądarkach opartych na silniku WebKit (np. Chrome, Safari).
+
+11. **HTML Markup**: Kod HTML zawiera sekcję FAQ z pytaniami i odpowiedziami. Nagłówek h1 informuje, że to często zadawane pytania. Pytania są podzielone na kategorie (np. "General Questions") i każde pytanie jest zawarte w elemencie `<details>`, który pozwala na ich rozwinięcie lub złożenie. Pytania są wyświetlane jako nagłówki `<summary>`, a odpowiedzi jako paragrafy `<p>`. Dla każdego pytania i odpowiedzi zastosowano odpowiednie klasy CSS.
+
+Markup:
+<main id="faq-section">
+        <h1>Frequently Asked Questions</h1>
+        <section class="faq-category">
+            <h2>General Questions</h2>
+            <details class="faq-item">
+                <summary class="faq-question">Can I order a product to an address different from my home?</summary>
+                <p class="faq-answer">Yes, you can specify an alternative delivery address during the checkout process.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Does your offer include a warranty?</summary>
+                <p class="faq-answer">Yes, all our products come with a standard manufacturer's warranty.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Is free shipping available?</summary>
+                <p class="faq-answer">Free shipping is available for orders above a certain value.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">How can I track my order?</summary>
+                <p class="faq-answer">After your order has been shipped, you will receive a tracking number that allows you to track your package online.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Can I change my order after placing it?</summary>
+                <p class="faq-answer">Order changes are possible only for a short time after the order is placed.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">What payment methods do you accept?</summary>
+                <p class="faq-answer">We accept credit cards, bank transfers, and electronic payments.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Can I receive a VAT invoice?</summary>
+                <p class="faq-answer">Yes, a VAT invoice will be sent by email or included with your package upon request.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Do you offer technical support?</summary>
+                <p class="faq-answer">We offer technical support for all of our products.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Can I place an order over the phone?</summary>
+                <p class="faq-answer">Yes, our team is available to take phone orders during business hours.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Are products available in different colors?</summary>
+                <p class="faq-answer">Yes, most products are available in multiple colors, which you can select before adding to the cart.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Can I return a product if I don't like it?</summary>
+                <p class="faq-answer">Yes, we accept returns within a specified period provided the product has not been used.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Can I cancel my order?</summary>
+                <p class="faq-answer">Yes, orders can be canceled if they have not yet been shipped.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">How can I update my contact details?</summary>
+                <p class="faq-answer">You can update your contact information in the 'My Account' section on our website.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Do you offer discounts for regular customers?</summary>
+                <p class="faq-answer">Yes, we have a loyalty program for our returning customers.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Where can I find product reviews?</summary>
+                <p class="faq-answer">Customer reviews of the product can be found on the product page under the description.</p>
+            </details>
+        </section>
+</main>
+
+Style guide: 8.0
+*/
+
+footer {
+  padding-top: 1rem;
+  background-color: var(--fifth-color);
+  color: var(--white-color);
+  text-align: center;
+  width: 100%;
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+
+.footer__link {
+  color: var(--red-color);
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+
+.footer__link:hover {
+  transform: scale(1.2);
+  color: var(--red2-color);
+}
+
+.footer__link:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/*
+FOOTER - sekcja stopki
+
+### Stopka (footer)
+
+1. **footer**: Główny kontener stopki, który zajmuje pełną szerokość strony (`100%`), ma tło w kolorze var(--fifth-color) oraz biały kolor tekstu. Tekst w stopce jest wyśrodkowany poziomo (`text-align: center;`) i ma odstęp na górze wynoszący 1 rem (`padding-top: 1rem;`).
+
+2. **.footer__text**: Klasa stosowana do stylizacji tekstu w stopce. Rozmiar czcionki wynosi `1.2rem`, a kolor to var(--white-color).
+
+3. **.footer__link**: Klasa używana do stylizacji linków w stopce. Linki mają kolor var(--red-color), są podkreślone (`text-decoration: underline;`) i posiadają płynne przejścia (transition) w celu uzyskania efektu transformacji podczas najechania kursorem. Przy hoverze linki są powiększane do `120%` oryginalnej wielkości (`transform: scale(1.2);`) i zmieniają kolor na var(--red2-color).
+
+4. **.footer__link:visited**: Styl dla odwiedzonych linków w stopce, nadaje im kolor `rgba(0, 0, 0, 0.7)`.
+
+5. **footer img**: Reguła CSS dotycząca obrazków w stopce. Obrazki są ograniczone do szerokości i wysokości `30 pikseli`, mają odstęp marginesu `10 pikseli` i efekt płynnego przejścia (transition) przy najechaniu kursorem (transform: scale(1.2);).
+
+### Kod HTML
+
+Kod HTML zawiera różne elementy umieszczone w stopce. Na początku znajdują się ikony linków do różnych platform społecznościowych (Facebook, Instagram, YouTube, Twitter). Następnie jest sekcja z informacjami ogólnymi, w tym prawami autorskimi oraz linkiem do polityki prywatności. Na końcu stopki znajduje się odnośnik do weryfikatora CSS.
+
+Stopka stanowi ważny element strony internetowej, zawierający istotne informacje, linki do mediów społecznościowych i inne zasoby.
+
+Markup:
+<footer>
+        <a href="https://www.facebook.com/" class="social__link"><img src="img/facebook.svg" alt="Facebook" width="30" height="30"></a>
+        <a href="https://www.instagram.com/" class="social__link"><img src="img/instagram.svg" alt="Instagram" width="30" height="30"></a>
+        <a href="https://www.youtube.com/" class="social__link"><img src="img/youtube.svg" alt="Youtube" width="30" height="30"></a>
+        <a href="https://www.twitter.com/" class="social__link"><img src="img/twitter.svg" alt="Twitter" width="30" height="30"></a>
+        <div class="footer">
+            <p class="footer__text">
+                All rights reserved &copy; 2023 Lorem ipsum |
+                <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+            </p>
+        </div>
+        <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Poprawny CSS!">
+        </a>
+    </p>
+</footer>
+
+Style guide: 12.0
+*/

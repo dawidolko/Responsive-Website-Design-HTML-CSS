@@ -1,0 +1,920 @@
+/* Root variables
+Definicje globalnych zmiennych CSS, które określają kolorystykę strony, w tym kolory tła, tekstów i akcentów.
+*/
+
+/* Body Styles
+Podstawowe style dla całego dokumentu, ustawiające m.in. kolor tła, rodzinę czcionek, wyrównanie elementów i układ flex.
+*/
+
+/* Header Styles
+Style dla nagłówka strony, określające jego pozycjonowanie, rozmiar i wyrównanie.
+*/
+
+/* Loading Bars
+Style dla animowanych pasków ładowania na górze i dole strony, z określeniem pozycji, rozmiaru i gradientu kolorów.
+*/
+
+/* Blur Background
+Style dla rozmytego tła, zdefiniowanie pozycji, rozmiaru, obrazu tła i filtru rozmycia.
+*/
+
+/* Header Text
+Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i efekt przejścia.
+*/
+
+/* Call to Action Button
+Style dla przycisku zachęcającego do działania w nagłówku, określające jego wygląd i interakcje.
+*/
+
+/* Navigation Bar
+Style dla paska nawigacji, w tym jego pozycjonowanie, układ, kolor tła i style dla logo oraz elementów nawigacyjnych.
+*/
+
+/* Footer Styles
+Style dla stopki, określające tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
+*/
+
+/* Media Queries for medium screens
+Zestaw reguł dla responsywności strony na średnich ekranach, w tym zmiany w stylach nawigacji i nagłówka.
+*/
+
+/* Media Queries for small screens
+Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w stylach nawigacji, nagłówka i pozycjonowania elementów.
+*/
+
+:root {
+  --bg-color: #d1c6c6;
+  --bg2-color: #6693af;
+  --blue: #0033a0;
+  --black-color: #000;
+  --white-color: #fefefe;
+  --gray-color: gray;
+  --red-color: #f55;
+  --red2-color: #f40;
+  --first-color: #193242;
+  --second-color: #375465;
+  --third-color: #183141;
+  --fourth-color: #1a3344;
+  --fifth-color: #385566;
+  --sixth-color: #355264;
+  --seventh-color: #1d384a;
+  --eighth-color: #1e394b;
+  --ninth-color: #395667;
+  --ten-color: #203a4d;
+}
+
+
+@keyframes fadeOut {
+
+  0%,
+  10% {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  90%,
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+body {
+  background-color: var(--bg2-color);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.loading-top, .loading-bottom {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 4px; 
+  background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
+  z-index: 1000;
+}
+
+.loading-top {
+  top: 0;
+  z-index: 1001;
+}
+
+.loading-bottom {
+  bottom: 0;
+  z-index: 1000;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.header__text {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header__text:hover {
+  transform: scale(0.8);
+}
+
+.header__text--colorized {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.header__cta {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  background-color: var(--red-color);
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.header__cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: var(--red2-color);
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--seventh-color);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo img {
+  border-radius: 50px;
+  width: 90px;
+}
+
+.logo {
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(0.8);
+}
+
+nav {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  border-top: 0.5px solid var(--white-color);
+  border-bottom: 0.5px solid var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--eighth-color);
+  padding: 10px 0;
+}
+
+
+nav ul {
+  line-height: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 12px;
+  margin-bottom: 15px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: color 0.3s, border-bottom-color 0.3s;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-color);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+.nav:hover {
+  transform: translateY(-3px);
+}
+
+nav ul li img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.nav__item {
+  transition: transform 0.3s ease;
+  margin-right: 15px;
+}
+
+#hamburger {
+  display: none;
+}
+
+input#toggle {
+  display: none;
+}
+
+main {
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.shopping-cart {
+  width: 90%;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.button a:hover {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.button a:active {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.button a:visited {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-items th,
+.cart-items td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.cart-items th {
+  background-color: var(--white-color);
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.cart-total span {
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--red2-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--red-color);
+}
+
+
+.section__heading {
+  font-size: 2rem;
+  color: var(--red-color);
+  margin-bottom: 2rem;
+}
+
+.section__heading:hover {
+  transform: scale(0.8);
+}
+
+#thankyou {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeOut 3s forwards;
+}
+
+#thankyou:target {
+  display: flex;
+}
+
+.thankyou-content {
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 20%;
+  margin-top: 50%;
+  margin-left: 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-content {
+  background-color: var(--white-color);
+  margin: auto auto;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid var(--gray-color);
+  width: 50%;
+}
+
+.close {
+  color: var(--bg-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalCheck:checked ~ .modal {
+  display: block;
+  animation: fadeOut 3s forwards;
+}
+
+.section {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card-form {
+  margin-top: 200px;
+  background-color: var(--gray-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.credit-card-form h2 {
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.credit-card-form label {
+  display: block;
+  color: var(--bg-color);
+  margin-bottom: .5rem;
+}
+
+.credit-card-form input,
+.credit-card-form select,
+.credit-card-form button {
+  width: 100%;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.credit-card-form button {
+  background-color: var(--blue);
+  color: var(--white-color);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.credit-card-form button:hover {
+  background-color: var(--blue);
+}
+
+/*
+PAY - sekcja płatności
+
+### Sekcja "Stylizacja sekcji płatności"
+
+- **main**: Element `<main>` posiada właściwość `flex: 1`, co sugeruje, że dostosowuje się do dostępnej przestrzeni flexbox na stronie. Marginesy na górze i na dole są wyzerowane, co oznacza brak dodatkowego odstępu.
+
+- **.shopping-cart**: Kontener o klasie "shopping-cart" zajmuje 90% szerokości, ma białe tło, zaokrąglone rogi, cień i padding.
+
+- **.button a**: Linki w przyciskach "button" mają ustawiony kolor i usuwanie dekoracji tekstu.
+
+- **.button a:hover**: Zmienia kolor tekstu linków po najechaniu kursorem.
+
+- **.button a:active**: Określa styl linków po ich aktywacji (naciśnięciu).
+
+- **.button a:visited**: Stylizuje odwiedzone linki w przyciskach.
+
+- **.title**: Nagłówek o klasie "title" jest wyśrodkowany, ma rozmiar czcionki 24px i margines na dole. Po najechaniu kursorem jest skalowany.
+
+- **.cart-items**: Tabela o klasie "cart-items" jest stylizowana jako tabela zwykła, a jej komórki mają odpowiednie paddingi i obramowanie.
+
+- **.cart-items th**: Nagłówki tabeli mają białe tło.
+
+- **.cart-total**: Tekst o klasie "cart-total" jest wyśrodkowany, ma rozmiar czcionki 20px i margines na górze. Tekst wewnątrz elementu "cart-total" jest pogrubiony.
+
+### Sekcja "Stylizacja formularza płatności"
+
+- **.credit-card-form**: Formularz płatności o klasie "credit-card-form" ma białe tło, zaokrąglone rogi, cień, szerokość, marginesy i wybór czcionki.
+
+- **.credit-card-form h2**: Nagłówek o klasie "credit-card-form h2" ma kolor, margines na dole i jest wyśrodkowany.
+
+- **.credit-card-form label**: Etykiety dla pól formularza są stylizowane.
+
+- **.credit-card-form input**, **.credit-card-form select**, **.credit-card-form button**: Pola formularza, selecty i przyciski mają ustawienia dotyczące szerokości, paddingu, obramowania i zaokrąglonych rogów.
+
+- **.credit-card-form button**: Przyciski w formularzu mają tło niebieskie, biały tekst, efekt kursora i animację zmiany koloru tła po najechaniu kursorem.
+
+### Sekcja "Okno modalne po potwierdzeniu płatności"
+
+- **#thankyou**: Element o id "thankyou" jest ukryty, a po wywołaniu targetu jest wyświetlany na środku ekranu z efektem animacji fadeOut.
+
+- **.thankyou-content**: Zawartość elementu o klasie "thankyou-content" ma białe tło i zaokrąglone rogi.
+
+- **.modal**: Okno modalne o klasie "modal" jest ukryte, posiada tło z przezroczystością i jest wyśrodkowane na ekranie.
+
+- **.modal-content**: Zawartość okna modalnego ma białe tło, obramowanie i jest wyśrodkowana.
+
+- **.close**: Przycisk zamykania okna modalnego jest stylizowany, zmienia kolor po najechaniu kursorem.
+
+### Sekcja "Media Queries - Responsywność"
+
+- Media queries (`@media (max-width: 800px)`): Reguła media query dostosowuje stylizację do szerokości ekranu mniejszej lub równej 800px, zmieniając szerokość formularza płatności.
+
+Markup:
+    <main>
+        <section class="section contact" id="contact">
+            <h1 style="display:none;">.</h1>
+            <h2 style="text-align: center;">YOUR CART!</h2>
+            <div class="shopping-cart">
+                <div class="title">Shopping Cart</div>
+                <table class="cart-items">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>
+                                <button>-</button>
+                                <input type="number" value="0" style="width: 50px; text-align: center;" disabled>
+                                <button>+</button>
+                            </td>
+                            <td>$0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-total">
+                    <span>Total: $0.00</span>
+                </div>
+                <a class="button" href="./ourProducts.html">Continue shopping</a>
+            </div>
+            <div class="credit-card-form">
+                <h2>CREDIT CARD</h2>
+                <form id="card-form" action="#thankyou">
+                    <fieldset>
+                        <legend>Card Details</legend>
+                        <div class="infocard">
+                            <img src="img/visa.webp" alt="Visa" height="50" width="50">
+                            <img src="img/master.webp" alt="Mastercard" height="50" width="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">CARD NUMBER</label>
+                            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="0000 0000 0000 0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryMonth">EXPIRY DAY</label>
+                            <select id="expiryMonth" name="expiryMonth">
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryYear">EXPIRY MONTH</label>
+                            <select id="expiryYear" name="expiryYear">
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolder">CARDHOLDER NAME</label>
+                            <input type="text" id="cardHolder" name="cardHolder" pattern="[A-Za-z\s]+" placeholder="JEAN O IMPUSM" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">CONTINUE</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <div id="thankyou">
+            <div class="thankyou-content">
+                <p>Zamówiłeś produkt. Zajrzyj na email! Miłego dnia!</p>
+            </div>
+        </div>
+</main>
+
+Style guide: 9.0
+*/
+
+footer {
+  padding-top: 1rem;
+  background-color: var(--fifth-color);
+  color: var(--white-color);
+  text-align: center;
+  width: 100%;
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+
+.footer__link {
+  color: var(--red-color);
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+
+.footer__link:hover {
+  transform: scale(1.2);
+  color: var(--red2-color);
+}
+
+.footer__link:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 800px) {
+
+  .credit-card-form {
+      width: 300px;
+  }
+
+
+  #hamburger {
+      display: flex;
+      color: var(--white-color);
+      text-decoration: none;
+      transition: transform 0.2s;
+      padding: 0px 10px;
+      font-size: 1.5rem;
+  }
+
+  #toggle {
+      display: none;
+      border: 0px;
+  }
+
+  nav{
+    padding-top: 22px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--eighth-color);
+  }
+
+  .navbar{
+    padding: 0;
+    align-items: normal;
+    background-color: transparent;
+    display: flex;
+  }
+
+
+  #toggle:checked ~ .navbar-links {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      justify-content: space-evenly;
+      padding: 0px;
+  }
+
+  .navbar-links {
+      display: none;
+  }
+
+
+  .nav ul li {
+      display: block;
+      margin: 0.5rem 0;
+  }
+
+  .header {
+      margin-top: 60px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  #hamburger {
+      display: flex;
+      color: var(--white-color);
+      text-decoration: none;
+      transition: transform 0.2s;
+      padding: 0px 10px;
+      font-size: 1.5rem;
+  }
+
+  #toggle {
+      display: none;
+      border: 0px;
+  }
+
+  #toggle:checked ~ .navbar-links {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      justify-content: space-evenly;
+      padding: 0px;
+  }
+
+  .navbar-links {
+      display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+  .logo img {
+      border-radius: 50px;
+      width: 80px;
+      margin-top: 0px;
+  }
+
+  .logo {
+      position: relative;
+      left: 0;
+      transform: none;
+      margin-bottom: 10px;
+      transition: transform 0.2s;
+  }
+
+  .logo:hover {
+      transform: scale(0.8);
+  }
+
+  .header {
+      margin-top: 60px;
+  }
+
+
+  .navbar {
+      justify-content: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+  }
+
+  nav {
+    margin-top: 0px;
+    padding-top: 22px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--eighth-color);
+}
+
+  nav ul {
+      width: 100%;
+      justify-content: center;
+  }
+
+  nav ul li {
+      width: 50%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white-color);
+      transition: color 0.3s, border-bottom-color 0.3s;
+      border-bottom: 2px solid transparent;
+      position: relative;
+  }
+
+  nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--white-color);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+      color: var(--white-color);
+      border-bottom-color: var(--white-color);
+  }
+
+  nav ul li a:hover:before {
+      visibility: visible;
+      width: 100%;
+  }
+
+  ma nav ul li a.active {
+      color: var(--white-color);
+      border-bottom-color: var(--white-color);
+  }
+
+  .nav {
+      position: relative;
+      transition: transform 0.3s ease;
+  }
+
+  .nav:hover {
+      transform: translateY(-3px);
+  }
+
+  .logo {
+      position: absolute;
+      top: 5px;
+      left: 10%;
+      transform: translateX(-50%);
+  }
+
+  .logo img {
+      margin-left: 20px;
+  }
+}
