@@ -355,15 +355,29 @@ Produkty i ich opisy są dopasowane do siebie co pokazuje, iż pasują do siebie
 
 ## Testy strony w formacie „Mobilnie”:
 
+<br>![projekt](img/description/photo39.png)
+
 Pasek nawigacyjny wygląda dobrze, ikona koszyka jest oddzielnie, aby odznaczała się od całości zakładek. Logo jest stale umieszczone w rogu ekranu, aby wbijało się w pamięć. Odznacza się i nie nakłada na inne elementy.
+
+<br>![projekt](img/description/photo40.png)
+
+<br>![projekt](img/description/photo41.png)
 
 Zdjęcia jak widać zmieniły swoją pozycję i nadal są w równych odstępach od siebie co spełnia wizję responsywnej strony.
 
+<br>![projekt](img/description/photo42.png)
+
 Slider jest teraz gotowy do przewijania slajd by slajd, poprzez co można w czytelny sposób nadal oglądać produkty w nim przedstawione.
+
+<br>![projekt](img/description/photo43.png)
 
 Promocję, newsletter i pasek stopki również w czytelny i responsywny sposób się ułożyły. Pokazuje to, że strona jest w pełni responsywna i dobrze dopasowana.
 
+<br>![projekt](img/description/photo44.png)
+
 Podstrony, jak widać też są w pełni responsywne i spełniają założenia projektu. Odstępy są równe, co robi stronę dobrą dla oka i przyciągającą klientów. Pasek nawigacyjny nie zasłania zbyt dużego pola i spełnia założenie, mówiące o polu dotyku (40px x 40px).
+
+<br>![projekt](img/description/photo45.png)
 
 Formularze kontaktowe, płatnicze są idealnie dopasowane do urządzeń mobilnych, dodatkowo są czytelne i spełniają warunki strony responsywnej.
 
@@ -409,13 +423,21 @@ Zgodnie z dokumentacją, strona została poddana rygorystycznym testom funkcjona
 
 - SEO: Perfekcyjny wynik 100/100 wskazuje na to, że strona została zbudowana zgodnie z zasadami SEO, co przyczynia się do jej widoczności w wynikach wyszukiwania.
 
+<br>![projekt](img/description/photo46.png)
+
 ### Walidacja CSS przez W3C Validator:
 
 - Walidacja CSS zakończyła się sukcesem - nie znaleziono żadnych błędów. Jest to oznaka, że arkusz stylów CSS został napisany czysto i zgodnie z obowiązującymi standardami, co zapewnia jego kompatybilność między przeglądarkami i ułatwia dalsze utrzymanie oraz rozwijanie kodu.
 
+<br>![projekt](img/description/photo47.png)
+
 ### Walidacja HTML przez Nu Html Checker:
 
 - Podobnie jak CSS, HTML strony również przeszedł walidację bez błędów. To świadczy o wysokiej jakości kodu, jego zgodności ze standardami oraz o tym, że prawdopodobnie będzie dobrze interpretowany przez różnorodne przeglądarki i urządzenia.
+
+<br>![projekt](img/description/photo48.png)
+
+Każdy z tych testów odgrywa kluczową rolę w zapewnieniu jakości i profesjonalizmu w projektowaniu stron internetowych. Dobre wyniki w testach wydajności i SEO są szczególnie ważne dla użytkowników końcowych oraz dla pozycjonowania strony w wyszukiwarkach. Natomiast wyniki walidacji CSS i HTML są ważne z perspektywy deweloperskiej, ponieważ potwierdzają, że kod jest dobrze napisany i będzie łatwiejszy w dalszym utrzymaniu i rozwijaniu. Dostępność jest istotna dla zapewnienia, że wszyscy użytkownicy, niezależnie od swoich możliwości, będą mogli korzystać ze strony. Osiągnięte wyniki wskazują, że szablon jest już na wysokim poziomie, ale wskazują również na obszary, które mogą zostać dodatkowo poprawione w przyszłości.
 
 <hr>
 
@@ -440,9 +462,7 @@ Dzięki temu podejściu, kod źródłowy projektu jest nie tylko dobrze zorganiz
 
 Przykładowe zdjęcia przedstawiające dokumentację KSS (Knyle Style Sheets):
 
-![Dokumentacja KSS 1](https://projekt1.dawidolko.pl/kss/styleguide/screenshot1.png)
-![Dokumentacja KSS 2](https://projekt1.dawidolko.pl/kss/styleguide/screenshot2.png)
-![Dokumentacja KSS 3](https://projekt1.dawidolko.pl/kss/styleguide/screenshot3.png)
+<br>![projekt](img/description/photo49.png)
 
 Całość dokumentacji dostępna również pod linkiem [tutaj](https://projekt1.dawidolko.pl/kss/styleguide/).
 
@@ -461,6 +481,8 @@ Całość projektu znajduje się również w repozytorium prywatnym pod linkiem 
 Dodatkowo jest załączona na Github-Pages, więc możliwa jest indywidualna ocena strony - [https://projekt1.dawidolko.pl/](https://projekt1.dawidolko.pl/)
 
 Historia commit'ów:
+
+<br>![projekt](img/description/photo50.png)
  
 ![Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main)
 
@@ -469,6 +491,8 @@ Historia commit'ów:
 # 7. Raport SEO
 
 ## a) [https://www.seobility.net/en/seocheck/](https://www.seobility.net/en/seocheck/)
+
+<br>![projekt](img/description/photo51.png)
 
 ### Szczegółowy raport:
 
@@ -491,6 +515,8 @@ Historia commit'ów:
 Podsumowując, raport wskazuje, że chociaż strona internetowa działa dobrze w pewnych aspektach, takich jak wydajność serwera i struktura linków, istnieją obszary takie jak jakość strony i czynniki zewnętrzne, które mogłyby być znacznie ulepszone, aby zwiększyć ogólną wydajność SEO.
 
 ## b) [https://developer.chrome.com/docs/lighthouse/](https://developer.chrome.com/docs/lighthouse/)
+
+<br>![projekt](img/description/photo52.png)
 
 ### Wyniki raportu Lighthouse:
 
