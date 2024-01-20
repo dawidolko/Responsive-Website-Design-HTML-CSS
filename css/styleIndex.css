@@ -1175,7 +1175,6 @@ div.slider-controls {
 }
 
 .product-item1 img {
-  width: 30px;
   height: auto;
 }
 
@@ -1228,8 +1227,8 @@ span .price {
   font-weight: bold;
 }
 
-.product-item1 img {
-  width: 100%;
+.rating img {
+  width: 50px;
   height: auto;
 }
 
