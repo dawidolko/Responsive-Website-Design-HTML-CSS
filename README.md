@@ -143,39 +143,60 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Na górze strony pokazuje się pasek nawigacyjny, który podczas przewijania strony w dół jest cały czas widoczny, niezależnie od responsywności.
 - Jest on podzielony na dwie części, pierwsza część to „logo strony”, a druga to linki główne całej strony. Po kliknięciu w ikony nawigacyjne, jak i również logo zostajemy przekierowani na adresy podstron.
 
+ <br>![projekt](img/description/photo3.png)
+
 ### Tło strony głównej (pierwszy widok):
 
 - Po załadowaniu strony widoczne jest tło, które jest zablurowane, a na nim logo z efektem, który ukazuje się po najechaniu na logo. Pod nim znajduje się słowo „klucz” strony i link do podstrony, w której są przedstawione nasze „oferty”.
+
+ <br>![projekt](img/description/photo4.png)
 
 ### Sekcja pierwsza (galeria):
 
 - Jako pierwsza sekcja na stronie głównej znajduje się galeria z widocznymi trzema zdjęciami, a pod nimi jest przycisk, który po kliknięciu rozwija kolejne kilka zdjęć. Każde zdjęcie ma swoją animację, która jest pokazywana po najechaniu na nie myszką.
 
+ <br>![projekt](img/description/photo5.png)
+
+ <br>![projekt](img/description/photo6.png)
+
 ### Sekcja druga (widok detali i krótki opis):
 
 - Kolejna sekcja to opis z alertem/popup'em, który ujawnia się po kliknięciu. Są tam również box'y, w których znajdują się informacje i przyciski do przeniesienia na podstronę produktów.
+
+ <br>![projekt](img/description/photo7.png)
 
 ### Sekcja trzecia (slider):
 
 - Sekcja slideru, została oparta na przedstawieniu produktów w ułożeniu poziomym. Po kliknięciu w daną opcję na sliderze, przenosi nas do danego produktu, gdzie mamy przedstawione zdjęcie, jak i również cenę.
 
+ <br>![projekt](img/description/photo8.png)
+
 ### Sekcja czwarta (oferta produktów):
 
 - Ta część kontenera, to sekcja która jest widoczna tylko na wersji desktopowej, przedstawia ona produkty z ich nazwą, ceną, jak i również oceną w postaci gwiazdek.
+
 - Przedstawione są również tam dwa przyciski, na pierwszym i ostatnim zdjęciu. Służą one do przenoszenia do podstrony produktów, gdzie dalej możemy obserwować produkty, którymi jesteśmy zainteresowani.
+
+ <br>![projekt](img/description/photo9.png)
 
 ### Sekcja piąta (oferty podzielone na kategorie):
 
 - Przedstawiona sekcja, jest wykonana w łatwy i kompleksowy sposób. Ukazane są trzy produkty z nazwą, zdjęciem i przyciskiem do pokazania więcej produktów na podstronie.
+
+ <br>![projekt](img/description/photo10.png)
 
 ### Sekcja szósta (kolekcje):
 
 - Ta część, to sekcja kolekcji. Ukazuje ona ofertę specjalną z opisem o % promocji oraz przyciskiem przenoszenia na podstronę ukazującą promocję.
 - Poniżej jest również 3 sposoby na szybką i tanią realizację zakupów, z możliwością zwrotu.
 
+ <br>![projekt](img/description/photo11.png)
+
 ### Sekcja siódma (newsletter):
 
 - To sekcja ukazująca możliwość zasubskrybowania newslettera strony, który będzie wysyłał na podany maila, informację o nowościach i promocjach.
+
+ <br>![projekt](img/description/photo12.png)
 
 ### Sekcja ósma (stopka):
 
@@ -183,11 +204,15 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Jest na niej również informacja, że jest w pełni poprawna semantycznie, ponieważ przeszła walidację.
 - Na stopce są social media strony takie jak Facebook, Instagram, YouTube, Twitter.
 
+ <br>![projekt](img/description/photo13.png)
+
 ## 4.2. Podstrona „About Us”
 
 ### Relatywna sekcja wraz z wzorem:
 
 - Ukazana sekcja przedstawia przykładowy wzór strony, oraz relatywnie ułożone elementy wraz z małym „formularzem”.
+
+ <br>![projekt](img/description/photo14.png)
 
 ### Sekcja „o nas”:
 
