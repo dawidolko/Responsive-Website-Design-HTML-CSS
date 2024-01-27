@@ -797,3 +797,11 @@ footer img:hover {
         margin-left: 20px;
     }
 }
+
+@media (max-width: 500px) {
+
+    #contact {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
