@@ -17,7 +17,7 @@
 7. [Raport SEO](#7-raport-seo)
 
 <hr>
- 
+
 # 1. Strona tytułowa
 
 Tytuł projektu: Wzorcowy serwis internetowy – Responsywna strona HTML/CSS
