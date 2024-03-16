@@ -1,4 +1,3 @@
-
 /* Root variables
    Definicje kolorów używanych w całej stronie.
    --bg-color, --bg2-color: Główne kolory tła.
@@ -94,7 +93,6 @@
    #gallery: Zmiany w układzie siatki galerii.
 */
 
-
 :root {
   --bg-color: #d1c6c6;
   --bg2-color: #6693af;
@@ -118,15 +116,14 @@
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: scale(0.8);
+    opacity: 0;
+    transform: scale(0.8);
   }
 
   to {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
-
 }
 
 body {
@@ -152,12 +149,22 @@ body {
   text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
-  background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgb(68, 0, 255),
+    rgb(0, 17, 255),
+    rgb(0, 162, 255),
+    rgb(49, 0, 128),
+    blue,
+    rgb(35, 0, 130),
+    rgb(130, 195, 238)
+  );
   z-index: 1000;
 }
 
@@ -218,7 +225,6 @@ body {
   background-color: var(--red2-color);
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -256,7 +262,6 @@ nav {
   background-color: var(--eighth-color);
   padding: 10px 0;
 }
-
 
 nav ul {
   line-height: 0;
@@ -336,7 +341,7 @@ main {
   margin-bottom: 100px;
 }
 
-#relativeTemplate{
+#relativeTemplate {
   position: relative;
   margin-top: -50px;
   width: 100%;
@@ -344,7 +349,8 @@ main {
   height: 50vh;
 }
 
-#relativ, #background2 {
+#relativ,
+#background2 {
   position: absolute;
   border-radius: 50%;
   width: 300px;
@@ -364,10 +370,10 @@ main {
   margin-top: 150px;
   margin-left: 450px;
   z-index: 1;
-  background-color: rgba(44, 40, 40, 0.7)
+  background-color: rgba(44, 40, 40, 0.7);
 }
 
-#relativ2{
+#relativ2 {
   position: absolute;
   background-color: rgb(55, 117, 209);
   z-index: 4;
@@ -380,19 +386,19 @@ main {
   height: 300px;
 }
 
-#relativ2 h3{
+#relativ2 h3 {
   margin-top: 50px;
   text-align: center;
   font-size: 1.5rem;
 }
 
-#relativ2 > ul > li{
+#relativ2 > ul > li {
   list-style-type: lower-greek;
   font-size: 1.2rem;
   margin-left: 20px;
 }
 
-#relativ2 > a{
+#relativ2 > a {
   margin-left: 90px;
   border-radius: 20px;
   text-decoration: none;
@@ -401,7 +407,7 @@ main {
   border: 1px solid rgb(49, 49, 49);
 }
 
-#relativ2 > a:hover{
+#relativ2 > a:hover {
   background-color: rgb(49, 49, 49);
   color: rgb(255, 255, 255);
 }
@@ -415,7 +421,6 @@ main {
 .section__heading:hover {
   transform: scale(0.8);
 }
-
 
 footer {
   padding-top: 1rem;
@@ -456,8 +461,6 @@ footer img:hover {
   transform: scale(1.2);
 }
 
-
-
 div h2 {
   text-align: center;
   font-size: 2rem;
@@ -474,9 +477,27 @@ div h2 {
   padding: 20px 0;
 }
 
-.gallery-container {
+.gallery-class {
   max-width: 1200px;
   margin: auto;
+}
+
+#gallery .image-box {
+  height: 300px;
+  overflow: hidden;
+}
+
+#gallery .image-box {
+  filter: grayscale(1);
+  transition: all 0.2s linear;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#gallery .image-box:hover {
+  transform: scale(1.025);
+  filter: grayscale(0);
 }
 
 #gallery {
@@ -491,42 +512,37 @@ div h2 {
   max-width: 400px;
 }
 
-#gallery img:hover {
-  animation-name: fadeIn;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-}
-
 @media (max-width: 1200px) and (min-width: 1000px) {
-  #relativ{
+  #relativ {
     margin-left: 50px;
     margin-top: 100px;
   }
 
-  #relativ2{
+  #relativ2 {
     margin-left: 150px;
   }
 
-  #background2{
+  #background2 {
     margin-left: 250px;
   }
 }
 
 @media (max-width: 1000px) {
-  #relativeTemplate{
+  #relativeTemplate {
     position: relative;
     width: 100%;
     height: 100%;
     height: 50vh;
   }
-  
-  #relativ, #background2 {
+
+  #relativ,
+  #background2 {
     position: absolute;
     border-radius: 50%;
     width: 300px;
     height: 300px;
   }
-  
+
   #background2 {
     box-shadow: #000000 0px 0px 20px 0px;
     background-color: lightgrey;
@@ -534,16 +550,16 @@ div h2 {
     margin-top: 50px;
     z-index: 2;
   }
-  
+
   #relativ {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 250px;
     z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
+    background-color: rgba(44, 40, 40, 0.7);
   }
-  
-  #relativ2{
+
+  #relativ2 {
     position: absolute;
     background-color: rgb(55, 117, 209);
     z-index: 4;
@@ -555,20 +571,20 @@ div h2 {
     width: 300px;
     height: 300px;
   }
-  
-  #relativ2 h3{
+
+  #relativ2 h3 {
     margin-top: 50px;
     text-align: center;
     font-size: 1.5rem;
   }
-  
-  #relativ2 > ul > li{
+
+  #relativ2 > ul > li {
     list-style-type: lower-greek;
     font-size: 1.2rem;
     margin-left: 20px;
   }
-  
-  #relativ2 > a{
+
+  #relativ2 > a {
     margin-left: 90px;
     border-radius: 20px;
     text-decoration: none;
@@ -576,30 +592,30 @@ div h2 {
     padding: 10px 10px;
     border: 1px solid rgb(49, 49, 49);
   }
-  
-  #relativ2 > a:hover{
+
+  #relativ2 > a:hover {
     background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
   }
 }
 
 @media (max-width: 768px) {
-
-  #relativeTemplate{
+  #relativeTemplate {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top:-100px;
+    margin-top: -100px;
     height: 50vh;
   }
-  
-  #relativ, #background2 {
+
+  #relativ,
+  #background2 {
     position: absolute;
     border-radius: 50%;
     width: 300px;
     height: 300px;
   }
-  
+
   #background2 {
     box-shadow: #000000 0px 0px 20px 0px;
     background-color: lightgrey;
@@ -607,16 +623,16 @@ div h2 {
     margin-top: 50px;
     z-index: 2;
   }
-  
+
   #relativ {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 80px;
     z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
+    background-color: rgba(44, 40, 40, 0.7);
   }
-  
-  #relativ2{
+
+  #relativ2 {
     position: absolute;
     background-color: rgb(55, 117, 209);
     z-index: 4;
@@ -628,20 +644,20 @@ div h2 {
     width: 300px;
     height: 300px;
   }
-  
-  #relativ2 h3{
+
+  #relativ2 h3 {
     margin-top: 50px;
     text-align: center;
     font-size: 1.5rem;
   }
-  
-  #relativ2 > ul > li{
+
+  #relativ2 > ul > li {
     list-style-type: lower-greek;
     font-size: 1.2rem;
     margin-left: 20px;
   }
-  
-  #relativ2 > a{
+
+  #relativ2 > a {
     margin-left: 90px;
     border-radius: 20px;
     text-decoration: none;
@@ -649,20 +665,20 @@ div h2 {
     padding: 10px 10px;
     border: 1px solid rgb(49, 49, 49);
   }
-  
-  #relativ2 > a:hover{
+
+  #relativ2 > a:hover {
     background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
   }
 
-  .navbar{
+  .navbar {
     padding: 0;
     align-items: normal;
     background-color: transparent;
     display: flex;
   }
 
-  nav{
+  nav {
     padding-top: 22px;
     margin-top: 20px;
     display: flex;
@@ -671,69 +687,66 @@ div h2 {
   }
 
   #hamburger {
-      display: flex;
-      color: var(--white-color);
-      text-decoration: none;
-      transition: transform 0.2s;
-      padding: 0px 10px;
-      font-size: 1.5rem;
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 0px 10px;
+    font-size: 1.5rem;
   }
 
   #toggle {
-      display: none;
-      border: 0px;
+    display: none;
+    border: 0px;
   }
 
   #toggle:checked ~ .navbar-links {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      justify-content: space-evenly;
-      padding: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0px;
   }
 
   .navbar-links {
-      display: none;
+    display: none;
   }
 
-
   .nav ul li {
-      display: block;
-      margin: 0.5rem 0;
+    display: block;
+    margin: 0.5rem 0;
   }
 
   .header {
-      margin-top: 60px;
+    margin-top: 60px;
   }
-
 }
 
 @media (max-width: 650px) {
-
   #hamburger {
-      display: flex;
-      color: var(--white-color);
-      text-decoration: none;
-      transition: transform 0.2s;
-      padding: 0px 10px;
-      font-size: 1.5rem;
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 0px 10px;
+    font-size: 1.5rem;
   }
 
   #toggle {
-      display: none;
-      border: 0px;
+    display: none;
+    border: 0px;
   }
 
   #toggle:checked ~ .navbar-links {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      justify-content: space-evenly;
-      padding: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0px;
   }
 
   .navbar-links {
-      display: none;
+    display: none;
   }
 
   .navbar {
@@ -745,148 +758,145 @@ div h2 {
     align-content: flex-end;
     justify-content: flex-start;
     text-align: center;
-}
-
+  }
 
   .logo img {
-      border-radius: 50px;
-      width: 80px;
-      margin-top: 0px;
+    border-radius: 50px;
+    width: 80px;
+    margin-top: 0px;
   }
 
   .logo {
-      position: relative;
-      left: 0;
-      transform: none;
-      margin-bottom: 10px;
-      transition: transform 0.2s;
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
   }
 
   .logo:hover {
-      transform: scale(0.8);
+    transform: scale(0.8);
   }
 
   .header {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
-
   .navbar {
-      justify-content: center;
-      flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   nav {
     padding-top: 22px;
     display: flex;
     justify-content: center;
     background-color: var(--eighth-color);
-}
-
+  }
 
   nav ul {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
 
   nav ul li {
-      width: 50%;
-      text-align: center;
+    width: 50%;
+    text-align: center;
   }
 
   nav ul li a {
-      display: flex;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      color: var(--white-color);
-      transition: color 0.3s, border-bottom-color 0.3s;
-      border-bottom: 2px solid transparent;
-      position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
+    position: relative;
   }
 
   nav ul li a:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--white-color);
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
   }
 
   nav ul li a:hover {
-      color: var(--white-color);
-      border-bottom-color: #fff;
+    color: var(--white-color);
+    border-bottom-color: #fff;
   }
 
   nav ul li a:hover:before {
-      visibility: visible;
-      width: 100%;
+    visibility: visible;
+    width: 100%;
   }
 
   nav ul li a.active {
-      color: var(--white-color);
-      border-bottom-color: var(--white-color);
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
   }
 
   .nav {
-      position: relative;
-      transition: transform 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
   }
 
   .nav:hover {
-      transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 
   .logo {
-      position: absolute;
-      top: 5px;
-      left: 10%;
-      transform: translateX(-50%);
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    transform: translateX(-50%);
   }
 
   .logo img {
-      margin-left: 20px;
+    margin-left: 20px;
   }
 }
 
-
 @media (max-width: 767px) {
   #gallery {
-      grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 300px);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   #gallery {
-      grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 300px);
   }
 }
 
 @media (min-width: 1200px) {
   #gallery {
-      grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
   }
 }
 
-@media(max-width: 465px) {
-  #relativeTemplate{
+@media (max-width: 465px) {
+  #relativeTemplate {
     position: relative;
     width: 100%;
     height: 100%;
     height: 40vh;
   }
-  
-  #relativ, #background2 {
+
+  #relativ,
+  #background2 {
     position: absolute;
     border-radius: 50%;
     width: 200px;
     height: 200px;
   }
-  
+
   #background2 {
     box-shadow: #000000 0px 0px 20px 0px;
     background-color: lightgrey;
@@ -894,16 +904,16 @@ div h2 {
     margin-top: 50px;
     z-index: 2;
   }
-  
+
   #relativ {
     box-shadow: #000000 0px 0px 20px 0px;
     margin-top: 150px;
     margin-left: 0px;
     z-index: 1;
-    background-color: rgba(44, 40, 40, 0.7)
+    background-color: rgba(44, 40, 40, 0.7);
   }
-  
-  #relativ2{
+
+  #relativ2 {
     position: absolute;
     background-color: rgb(55, 117, 209);
     z-index: 4;
@@ -915,20 +925,20 @@ div h2 {
     width: 200px;
     height: 200px;
   }
-  
-  #relativ2 h3{
+
+  #relativ2 h3 {
     margin-top: 20px;
     text-align: center;
     font-size: 1rem;
   }
-  
-  #relativ2 > ul > li{
+
+  #relativ2 > ul > li {
     list-style-type: lower-greek;
     font-size: 0.8rem;
     margin-left: 20px;
   }
-  
-  #relativ2 > a{
+
+  #relativ2 > a {
     margin-left: 40px;
     border-radius: 20px;
     text-decoration: none;
@@ -936,8 +946,8 @@ div h2 {
     padding: 10px 10px;
     border: 1px solid rgb(49, 49, 49);
   }
-  
-  #relativ2 > a:hover{
+
+  #relativ2 > a:hover {
     background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
   }

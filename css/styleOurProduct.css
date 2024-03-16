@@ -63,14 +63,13 @@ Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w sty
   --ten-color: #203a4d;
 }
 
-
 @keyframes container {
   0% {
-      transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -97,12 +96,22 @@ body {
   text-align: center;
 }
 
-.loading-top, .loading-bottom {
+.loading-top,
+.loading-bottom {
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 4px; 
-  background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 17, 255), rgb(0, 162, 255), rgb(49, 0, 128), blue, rgb(35, 0, 130), rgb(130, 195, 238));
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgb(68, 0, 255),
+    rgb(0, 17, 255),
+    rgb(0, 162, 255),
+    rgb(49, 0, 128),
+    blue,
+    rgb(35, 0, 130),
+    rgb(130, 195, 238)
+  );
   z-index: 1000;
 }
 
@@ -338,7 +347,6 @@ input[type="radio"] {
   border: 1px solid var(--white-color);
   margin-bottom: 20px;
   background: var(--white-color);
-  ;
   border-radius: 3px;
   padding: 20px;
   width: calc(33.333% - 40px);
@@ -402,7 +410,6 @@ input[type="radio"] {
   margin-bottom: 20px;
   font-size: 14px;
   color: var(--gray-color);
-  ;
 }
 
 .product_women a,
@@ -489,28 +496,28 @@ footer img:hover {
 
 @media (max-width: 768px) {
   #hamburger {
-      display: flex;
-      color: var(--white-color);
-      text-decoration: none;
-      transition: transform 0.2s;
-      padding: 0px 10px;
-      font-size: 1.5rem;
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 0px 10px;
+    font-size: 1.5rem;
   }
 
   #toggle {
-      display: none;
-      border: 0px;
+    display: none;
+    border: 0px;
   }
 
   #toggle:checked ~ .navbar-links {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      justify-content: space-evenly;
-      padding: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0px;
   }
 
-  nav{
+  nav {
     padding-top: 22px;
     margin-top: 20px;
     display: flex;
@@ -518,53 +525,52 @@ footer img:hover {
     background-color: var(--eighth-color);
   }
 
-  .navbar{
+  .navbar {
     padding: 0;
     align-items: normal;
     background-color: transparent;
     display: flex;
   }
 
-
   .navbar-links {
-      display: none;
+    display: none;
   }
 
   .nav ul li {
-      display: block;
-      margin: 0.5rem 0;
+    display: block;
+    margin: 0.5rem 0;
   }
 
   .header {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 650px) {
   #hamburger {
-      display: flex;
-      color: var(--white-color);
-      text-decoration: none;
-      transition: transform 0.2s;
-      padding: 0px 10px;
-      font-size: 1.5rem;
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 0px 10px;
+    font-size: 1.5rem;
   }
 
   #toggle {
-      display: none;
-      border: 0px;
+    display: none;
+    border: 0px;
   }
 
   #toggle:checked ~ .navbar-links {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      justify-content: space-evenly;
-      padding: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0px;
   }
 
   .navbar-links {
-      display: none;
+    display: none;
   }
 
   .navbar {
@@ -577,34 +583,33 @@ footer img:hover {
     align-content: flex-end;
     justify-content: flex-start;
     text-align: center;
-}
-
+  }
 
   .logo img {
-      border-radius: 50px;
-      width: 80px;
-      margin-top: 0px;
+    border-radius: 50px;
+    width: 80px;
+    margin-top: 0px;
   }
 
   .logo {
-      position: relative;
-      left: 0;
-      transform: none;
-      margin-bottom: 10px;
-      transition: transform 0.2s;
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
   }
 
   .logo:hover {
-      transform: scale(0.8);
+    transform: scale(0.8);
   }
 
   .header {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
   .navbar {
-      justify-content: center;
-      flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   nav {
@@ -612,90 +617,88 @@ footer img:hover {
     display: flex;
     justify-content: center;
     background-color: var(--eighth-color);
-}
+  }
 
   nav ul {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
 
   nav ul li {
-      width: 50%;
-      text-align: center;
+    width: 50%;
+    text-align: center;
   }
 
   nav ul li a {
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      color: var(--white-color);
-      transition: color 0.3s, border-bottom-color 0.3s;
-      border-bottom: 2px solid transparent;
-      position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
+    position: relative;
   }
 
   nav ul li a:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--white-color);
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
   }
 
   nav ul li a:hover {
-      color: var(--white-color);
-      border-bottom-color: var(--white-color);
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
   }
 
   nav ul li a:hover:before {
-      visibility: visible;
-      width: 100%;
+    visibility: visible;
+    width: 100%;
   }
 
   nav ul li a.active {
-      color: var(--white-color);
-      border-bottom-color: var(--white-color);
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
   }
 
   .nav {
-      position: relative;
-      transition: transform 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
   }
 
   .nav:hover {
-      transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 
   .logo {
-      position: absolute;
-      top: 5px;
-      left: 10%;
-      transform: translateX(-50%);
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    transform: translateX(-50%);
   }
 
   .logo img {
-      margin-left: 20px;
+    margin-left: 20px;
   }
 }
 
 @media (max-width: 960px) {
-
   .product_women,
   .product_men,
   .product_kids {
-      width: calc(50% - 40px);
+    width: calc(50% - 40px);
   }
 }
 
 @media (max-width: 640px) {
-
   .product_women,
   .product_men,
   .product_kids {
-      width: 100%;
+    width: 100%;
   }
 }
