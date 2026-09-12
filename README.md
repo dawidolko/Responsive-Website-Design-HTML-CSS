@@ -2,13 +2,14 @@
 
 > 📰 **Sixteen pages, no JavaScript** — a fully responsive magazine and shop template built with HTML and CSS alone
 
-**Curiosities Magazine** is a website template for a magazine that also sells: home, articles, three product pages with their own checkout screens, gallery, services, about, FAQ, contact and privacy — sixteen pages in all. Every layout, every hover state and every breakpoint is CSS. There is no JavaScript anywhere in the project, which was the constraint it was built under.
+**Curiosities Magazine** is a website template for a magazine that also sells: home, articles, three product pages with their own checkout screens, gallery, services, about, FAQ, contact and privacy — sixteen pages in all. Every layout, every hover state and every breakpoint is CSS — no scripted behaviour anywhere, which was the constraint it was built under.
 
 It was produced for an internet technologies course and carries the evidence: W3C validation, responsiveness testing across viewports, a SEO report and KSS-style documentation of the stylesheets, all written up in this repository.
 
 ![HTML5](https://img.shields.io/badge/HTML5-semantic-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-responsive-1572B6?logo=css3&logoColor=white)
 ![No JavaScript](https://img.shields.io/badge/JavaScript-none-lightgrey)
+![JSON-LD](https://img.shields.io/badge/Schema.org-JSON--LD-F5A623)
 ![W3C](https://img.shields.io/badge/W3C-validated-005A9C?logo=w3c&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -18,7 +19,7 @@ It was produced for an internet technologies course and carries the evidence: W3
 
 ## 🎯 Key Features
 
-- **No JavaScript at all** — the menu, the galleries and the interactive states are CSS. The site works with scripting disabled because there is nothing to disable.
+- **No behavioural JavaScript** — the menu, the galleries and the interactive states are CSS. The only `<script>` in the project is a JSON-LD block describing the site to search engines, which executes nothing.
 - **Sixteen pages, one visual language** — each page gets its own stylesheet (`styleIndex.css`, `styleGallery.css`, `stylePay.css` …), so page-specific rules cannot leak into a neighbour.
 - **A full purchase path** — three product pages, each with its own checkout screen, plus a shared payment page. The flow is complete rather than stopping at "add to cart".
 - **Forms with HTML validation** — contact and payment use the browser's own constraint validation: required fields, types and patterns, no script needed.
@@ -54,6 +55,7 @@ It was produced for an internet technologies course and carries the evidence: W3
 | **HTML5**  | Sixteen semantic pages with landmarks and proper heading order. |
 | **CSS3**   | Layout, responsiveness, states and transitions — one stylesheet per page. |
 | **KSS**    | Documentation comments inside the stylesheets.                |
+| **JSON-LD** | Schema.org description of the site for search engines.       |
 
 ---
 
